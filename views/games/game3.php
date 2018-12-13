@@ -3,7 +3,7 @@
 <head>
     <title>Brick Game</title>
     <!--STYLES-->
-    <link rel="stylesheet" href="/NeverForget/Never_Forget/css/bootstrap.css">
+    <link rel="stylesheet" href="/Never_Forget/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../../Styles/games/game3.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
@@ -17,8 +17,8 @@
     <script type="text/javascript" src="../../scripts/games/game3/game3.js"></script>
 
     <!--BOOTSTRAP-->
-    <script src="/NeverForget/Never_Forget/js/popper.min.js"></script>
-    <script src="/NeverForget/Never_Forget/js/bootstrap.min.js"></script>
+    <script src="/Never_Forget/js/popper.min.js"></script>
+    <script src="/Never_Forget/js/bootstrap.min.js"></script>
     
     
 </head>

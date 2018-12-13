@@ -1,6 +1,5 @@
 <?php 
     session_start();
-    //require_once $_SERVER["DOCUMENT_ROOT"] . "/Never_Forget/librerias/ti.php";
     require_once $_SERVER["DOCUMENT_ROOT"] . "/Never_Forget/librerias/ti.php";
 ?>
 <!DOCTYPE html>
@@ -12,12 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
   
-    <link rel="stylesheet" href="../../css/bootstrap.css">
-    <link rel="stylesheet" href="../../Styles/Games.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../Styles/Games.css">
     <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
-    <script src="../../js/jquery-3.3.1.min.js"></script>
-    <script src="../../js/popper.min.js"></script>
-    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     
 </head>
 <body>
