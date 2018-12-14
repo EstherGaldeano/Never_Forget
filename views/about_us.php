@@ -54,7 +54,7 @@
                         <img class="card-img-top rounded-circle" src="../assets/img/avatar/avatar_JordiPe.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Jordi Peña</h5>
-                            <p class="card-text"> </p>
+                            <p class="card-text">"Always trying to learn something new.<br>I love to cook at home having a nice glass of wine "</p>
                             <div class="card-footer justify-content-center">
                                 <ul>
                                     <li><a href="https://twitter.com/Jordipem" target="_blank"><i class="fa fa-twitter iconAbout"></i></a></li>
