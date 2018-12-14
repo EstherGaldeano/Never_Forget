@@ -76,6 +76,8 @@ html, body{
 
 .button{
     margin-top: 5%;
+    cursor: pointer;
+    margin-left: 4%;
 }
 
 #botonBajar{
