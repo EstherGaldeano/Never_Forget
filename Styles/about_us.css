@@ -1,7 +1,13 @@
 .main {
-    background-color: #A5A5A5;
-    color: white;
+    background-image: url(../assets/img/textura-negativo-1.jpg);
+    
+    color:black;
     margin-top: 3%;
+}
+
+.abstract{
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 div .card{
