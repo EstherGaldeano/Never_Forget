@@ -25,6 +25,6 @@
 
     function resetTimer() {
         clearTimeout(t);
-        t = setTimeout(logout, 10000)
+        t = setTimeout(logout, 600000) //10min
         // 1000 milisec = 1 sec
     }

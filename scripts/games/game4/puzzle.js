@@ -176,4 +176,6 @@ function solved() {
        document.getElementById("puzzle").style.transform= "scale(1.2)";
        document.getElementById("win").style.display= "block";
        document.getElementById("winContinue").style.display= "block";
+
 }
+

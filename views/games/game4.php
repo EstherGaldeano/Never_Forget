@@ -47,5 +47,6 @@
                 <button class="btn btn-alert" id="abandonar" type="button" onClick="solved()">Leave</button>
             </div>
 
+
 <?php endblock() ?>
 
