@@ -1,5 +1,5 @@
 .main {
-    background-image: url(../assets/img/textura-negativo-1.jpg);
+    background-image: url(../assets/img/textura-negativo-1-aboutUs.jpg);
     color:black;
     margin-top: 3%;
 }
@@ -18,7 +18,7 @@ div .card{
 }
 
 .iconAbout {
-    color:white;
+    color:black;
     font-size: 16px;
 }
 
