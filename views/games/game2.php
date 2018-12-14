@@ -6,7 +6,7 @@
 
 
 
-<link rel="stylesheet" href="/NeverForget/Never_Forget/css/bootstrap.css">
+    <link rel="stylesheet" href="/Never_Forget/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../../Styles/games/game2.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
@@ -23,8 +23,8 @@
 
 
 <!--BOOTSTRAP-->
-    <script src="/NeverForget/Never_Forget/js/popper.min.js"></script>
-    <script src="/NeverForget/Never_Forget/js/bootstrap.min.js"></script>
+    <script src="/Never_Forget/js/popper.min.js"></script>
+    <script src="/Never_Forget/js/bootstrap.min.js"></script>
     
     
 
