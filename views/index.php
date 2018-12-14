@@ -16,6 +16,9 @@ include "../templates/master.php" ?>
                 Your browser does not support HTML5 video.
 
         </video>
+        <div id="imgMovil" >
+            <img src="../assets/img/background.jpg" alt="">
+        </div>
 
          <?php  
         if(isset($_SESSION['error'])){?>
@@ -150,10 +153,11 @@ include "../templates/master.php" ?>
             </div>
         </div>  
         <div id="texto" class="texto text-center">
-            <p id = indexText class="text-black">España está en plena Guerra Civil entre republicanos y nacionalistas</p>
-            <p id = indexText class="text-black">El bando nacionalista gana posiciones gracias a la ayuda de países afines</p>
-            <p id = indexText class="text-black">Barcelona, capital de Catalunya,</p>
-            <p id = indexText class="text-black">Resiste</p>
+            <p id ="indexText" class="text-black">España está en plena Guerra Civil entre republicanos y nacionalistas</p>
+            <p id ="indexText" class="text-black">El bando nacionalista gana posiciones gracias a la ayuda de países afines</p>
+            <p id ="indexText" class="text-black">Barcelona, capital de Catalunya,</p>
+            <p id ="indexText" class="text-black">Resiste</p>
+
             <?php if(isset($_SESSION['userLoged'])){?>
                 <button type="button" class="btn-lg btn-danger regular-button mr-5"  data-toggle="modal" data-target="#LoginModal" disabled="true">LOG IN</button>
             <?php }else{?>
