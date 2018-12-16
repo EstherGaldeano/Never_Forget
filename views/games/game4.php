@@ -37,11 +37,11 @@
             <div class="helps">
                 <img class="help" id="help" src="../../assets/img/REFUGI.jpg" alt="">
                 <div class="option">
-                    <p class="text-white ml-2">MOVES</p>
+                    <p class="text-white ml-1">MOVES</p>
                     <div id="contador" class=" text-white float-left mt-1 info"></div>
                 </div>
                 <div class="option">
-                    <p class="text-white ml-2">TIME</p>
+                    <p class="text-white ml-1">TIME</p>
                     <div id="tiempo" class="float-left text-white  mt-1 info"></div>
                 </div>
                 <button class="btn btn-danger" id="abandonar" type="button" onClick="solved()">Leave</button>
