@@ -66,12 +66,20 @@
                         <img class="card-img-top rounded-circle" src="../assets/img/avatar/avatar_JordiPe.png" alt="Card image cap">
                         <div class="card-body">
 <<<<<<< HEAD
+<<<<<<< HEAD
                             <h5 class="card-title">Jordi Peña</h5>
                             <p class="card-text">"Always trying to learn something new.<br>I love to cook at home having a nice glass of wine "</p>
 =======
                             <h5 class="card-title name">Jordi Peña</h5>
                             <p class="card-text"> </p>
 >>>>>>> master
+=======
+
+                            <h5 class="card-title">Jordi Peña</h5>
+                            <p class="card-text">"Always trying to learn something new.<br>I love to cook at home having a nice glass of wine "</p>
+
+                           
+>>>>>>> 4832a448712fa9e5aa0667394386a6497402c82a
                             <div class="card-footer justify-content-center">
                                 <ul>
                                     <li><a href="https://twitter.com/Jordipem" target="_blank"><i class="fa fa-twitter iconAbout"></i></a></li>
