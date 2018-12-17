@@ -204,4 +204,14 @@ function encriptPassword($password){
     return $password;
 }
 
+function selectGame($id){
+    $conn = openBD();
+
+    $sentencia = $conn->prepare("SELECT progress FROM users WHERE id = :id");
+    $sentencia->bindParam(':id', $id);
+    $sentencia->execute();
+    $result = $sentencia->fetch();
+    return  $result[0];
+    $conn = closeBD();
+}
 ?>

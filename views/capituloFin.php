@@ -1,14 +1,31 @@
-<?php include "../templates/masterGames.php" ?>
-<script type="text/javascript" src="../scripts/text.js"></script>
+
+<?php
+    include "../templates/masterGames.php";
+    include '../librerias/bd.php';
+?>
+
 
 <?php startblock('head') ?>
     <title>Capitulo 1</title>
     <link rel="stylesheet" href="../Styles/capituloFin.css">
     <script src="/Never_Forget/scripts/longText.js"></script>
-    <?php endblock() ?>
+    <script type="text/javascript" src="../scripts/text.js"></script>
+<?php endblock() ?>
 
 
 <?php startblock('principal') ?>
+
+<?php
+    if(isset($_SESSION['userLoged'])){ 
+        $id= $_SESSION['userLoged']['id'];
+        $numero= selectGame($id);
+        ?>
+        <p class="text-white"> 
+            <?php echo $numero; ?>
+        </p>
+        <?php
+    }
+?>
 <div class="background" id="background"></div>
 <div class="ext" id="long">
     <img id="cancel" onClick="cerrar()"src="../assets/img/cancel.svg" alt="">
@@ -57,7 +74,7 @@
     
 
 <div class="btn-group" role="group">
-    <button type="button" onClick="showModal()" class="btn-lg btn-success m-5" id="botonLearnMore" data-toggle="modal" data-target="#modalPage">LEARN MORE
+    <button type="button" onClick="showModal()" class="btn-lg btn-success m-5" id="botonLearnMore">LEARN MORE
     <button type="button" class="btn-lg btn-danger m-5" id="botonQR" data-toggle="modal" data-target="#modalQR">CONTINUE
 </div>
 
