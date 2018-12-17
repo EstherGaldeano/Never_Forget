@@ -123,7 +123,9 @@
           </button>
         </div>
         <div class="modal-footer bg-secondary">
-          <button type="button" class="btn btn-dark">Continue the Adventure</button>
+          <button type="button" class="btn btn-dark" >
+          <a style="text-decoration:none;color:white;" href="../capituloFin.php">Continue the Adventure</a>
+          </button>
         </div>
       </div>
     </div>
