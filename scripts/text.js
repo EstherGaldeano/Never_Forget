@@ -1,10 +1,22 @@
-var enigma = $('#progress').text();
+//var enigma = "3";
+var enigma=$('#progress').text();
 console.log("AIXO ES ENIGMACODE: " + enigma.trim());
 
+var boton1= '#boton1';
+var boton2= '#boton2';
+var boton3= '#boton3';
+var boton4= '#boton4';
+var boton5= '#boton5';
+var img1 = '#imgPC1';
+var img2 = '#imgPC2';
+var img3 = '#imgPC3';
+var img4 = '#imgPC4';
+var img5 = '#imgPC5';
 textMod();
 
 function textMod(){
-switch (enigma.trim()) {
+switch (enigma//.trim()
+) {
   case "1":
   //ANTES DEL JUEGO
   $('.titulo').text('Chapter 1 - Bombing');
@@ -116,7 +128,7 @@ break;
 
 
 function cambioBoton(boton, rutaB, img, rutaI){
-  $(boton).val("JUGAR");
+  $(boton).text("JUGAR");
   $(boton).attr('href', rutaB);
   $(boton).attr('class', 'btn-lg btn-success mb-5');
   $(img).attr('src', rutaI);
