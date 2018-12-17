@@ -160,11 +160,13 @@ include "../templates/master.php" ?>
 
 
             <?php if(isset($_SESSION['userLoged'])){?>
-                <button type="button" class="btn-lg btn-danger regular-button mr-2 button"  data-toggle="modal" data-target="#LoginModal" disabled="true">LOG IN</button>
+                <button type="button" class="btn-lg btn-secondary regular-button mr-2 button"  data-toggle="modal" data-target="#LoginModal" disabled="true">LOG IN</button>
+                <button type="button" class="btn-lg btn-secondary regular-button mr-2 button"  data-toggle="modal" data-target="#RegistreModal" disabled="true">REGISTER</button>
             <?php }else{?>
                 <button type="button" class="btn-lg btn-danger regular-button mr-2 button"  data-toggle="modal" data-target="#LoginModal">LOG IN</button>
+                <button type="button" class="btn-lg btn-danger regular-button mr-2 button"  data-toggle="modal" data-target="#RegistreModal">REGISTER</button>
             <?php } ?>
-            <button type="button" class="btn-lg btn-danger regular-button mr-2 button"  data-toggle="modal" data-target="#RegistreModal">REGISTER</button>
+            
         </div> 
 
         <!-- Guarda la el intento de inicio de sesión en una cookie-->

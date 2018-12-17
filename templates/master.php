@@ -39,18 +39,13 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/Never_Forget/librerias/ti.php";
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav col-11">
+                <div class="navbar-nav col-10">
                     <a class="nav-item nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="contextoHistorico.php">Historic Context <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="../views/about_us.php">About us <span class="sr-only">(current)</span></a>
-                    <?php if(isset($_SESSION['userLoged'])){ ?>
-                        <?php if($_SESSION['userLoged']['role'] == 1){ ?>
-                            <a href="admin.php" >Admin</a>
-                        <?php } ?>
-                    <?php } ?>
                     
                 </div>
-                <div class="dropdown col-1 float-right">
+                <div class="dropdown col-2 float-right">
                     
                     <a class="navbar-brand float-right"role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
                         <!--<img src="../assets/img/usuario.png" width="30" height="30" alt="">-->
@@ -62,9 +57,10 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/Never_Forget/librerias/ti.php";
                                 <?php if($_SESSION['userLoged']['role'] == 0){ ?>
                                     <a class="dropdown-item" href="#"><?php echo $_SESSION['userLoged']['name']; ?></a>
                                 <?php }else{ ?>
-                                    <a class="dropdown-item" href="#"><?php echo $_SESSION['userLoged']['name']; ?>: admin</a>
+                                    <a class="dropdown-item" href="admin.php"><?php echo $_SESSION['userLoged']['name']; ?> (Admin)</a>
                                 <?php } ?>
                                 <a><button class="dropdown-item" type="submit" name="logout">Logout</button></a>
+                                <a class="dropdown-item" href="userProgress.php">My progress</a>
                             </form>
                             
                         <?php }else{ ?>
