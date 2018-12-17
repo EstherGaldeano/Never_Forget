@@ -1,17 +1,18 @@
-
-var enigma = 1;
+var enigma = $('#codegame').val();
+console.log("AIXO ES ENIGMACODE: " + enigma);
 
 textMod();
 
 function textMod(){
 switch (enigma) {
-    case 1:
+    case "1":
     //ANTES DEL JUEGO
     $('.titulo').text('Chapter 1 - Bombing');
     $('#pHistoria').text ('Barcelona,January 1938,neighborhood of Gracia. As usual, Lluís heads home after a');
     $('#pHistoria').append ('long day of work at the factory, where he helps the Republicans make ammunition.Suddenly, the silence');
     $('#pHistoria').append ('of the night is shattered by a large blast: another air strike. Lluís must find some place to take shelter..');
 
+    //AFTER GAME
     $('#pHistoriaFin').text ('The city is destroyed after the attack. Lluís goes home hoping to find his son, Pau, but there is no trace of him.');
     $('#pHistoriaFin').append (' He searches long and hard, but the boy hasn’t shown up. Lluís decides it’s time to take action.');
  

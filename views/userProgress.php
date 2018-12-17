@@ -1,4 +1,8 @@
-<?php include "../templates/masterGames.php" ?>
+<?php include "../templates/master.php" ?>
+<?php startblock('head')?>
+  <link rel="stylesheet" href="../Styles/userProgress.css">
+  <link rel="stylesheet" href="/Never_Forget/Styles/Games.css">
+<?php endblock() ?>
 <?php startblock('principal') ?>
 
 <div class="container">

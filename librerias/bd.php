@@ -165,4 +165,22 @@ function selectUsuarioByPassword($email, $password){
     $conn = closeBD();
 }
 
+function selectEnigmaByCode($enigmacode){
+    try{
+        $conn = openBD();
+
+        $sentencia = $conn->prepare("SELECT * FROM enigma WHERE enigmacode = :enigmacode");
+        $sentencia->bindParam(':enigmacode', $enigmacode);
+        $sentencia->execute();
+        $result = $sentencia->fetch();
+
+        return  $result;
+    }
+    catch(PDOException $e){
+        $_SESSION['error'] = errorMessage($e);
+    }
+    $conn = closeBD();
+    
+}
+
 ?>

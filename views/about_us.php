@@ -3,6 +3,7 @@
 <?php startblock('head') ?>
     <title>About us</title>
     <link rel="stylesheet" href="../Styles/about_us.css">
+    <link rel="stylesheet" href="../Styles/Tindex.css">
     
 <?php endblock() ?>
 <?php startblock('principal') ?>
@@ -47,7 +48,7 @@
                     <div class="card">
                         <img class="card-img-top rounded-circle" src="../assets/img/avatar/avatar_JordiPa.png" alt="Card image cap" style="background-color: white">
                         <div class="card-body">
-                            <h5 class="card-title">Jordi Parellada</h5>
+                            <h5 class="card-title name">Jordi Parellada</h5>
                             <p class="card-text"></p>
                             <div class="card-footer justify-content-center">
                                 <ul>
@@ -64,8 +65,13 @@
                     <div class="card">
                         <img class="card-img-top rounded-circle" src="../assets/img/avatar/avatar_JordiPe.png" alt="Card image cap">
                         <div class="card-body">
+<<<<<<< HEAD
                             <h5 class="card-title">Jordi Peña</h5>
                             <p class="card-text">"Always trying to learn something new.<br>I love to cook at home having a nice glass of wine "</p>
+=======
+                            <h5 class="card-title name">Jordi Peña</h5>
+                            <p class="card-text"> </p>
+>>>>>>> master
                             <div class="card-footer justify-content-center">
                                 <ul>
                                     <li><a href="https://twitter.com/Jordipem" target="_blank"><i class="fa fa-twitter iconAbout"></i></a></li>
@@ -82,7 +88,7 @@
                     <div class="card">
                         <img class="card-img-top rounded-circle" src="../assets/img/avatar/avatar_Esther.png" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Esther Galdeano</h5>
+                            <h5 class="card-title name">Esther Galdeano</h5>
                             <p class="card-text"></p>
                             <div class="card-footer justify-content-center">
                                 <ul>
@@ -100,7 +106,7 @@
                     <div class="card">
                         <img class="card-img-top rounded-circle" src="../assets/img/avatar/avatar_Diego.png" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Diego Rodriguez</h5>
+                            <h5 class="card-title name">Diego Rodriguez</h5>
                             <p class="card-text"></p>
                             <div class="card-footer justify-content-center">
                                 <ul>
@@ -118,7 +124,7 @@
                     <div class="card">
                         <img class="card-img-top rounded-circle" src="../assets/img/avatar/avatar_Francesc.png" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Francesc Retamal</h5>
+                            <h5 class="card-title name">Francesc Retamal</h5>
                             <p class="card-text">Pequeña descipción de cada uno</p>
                             <div class="card-footer justify-content-center">
                                 <ul>
