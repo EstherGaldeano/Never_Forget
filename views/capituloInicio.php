@@ -1,26 +1,33 @@
 <?php include "../templates/masterGames.php"; 
-      include '../librerias/bd.php';?>
-<script type="text/javascript" src="../scripts/text.js"></script>
-
-<?php startblock('titulo') ?>
-    <title>Capitulo 1</title>
-    <?php endblock() ?>
-<?php endblock() ?>
-
-<?php startblock('principal') ?>
+      include '../librerias/bd.php';
+?>
 
 <?php
     if(isset($_SESSION['userLoged'])){ 
         $id= $_SESSION['userLoged']['id'];
         $numero= selectGame($id);
-        ?>
-        <p style="display:hidden;"> 
-            <?php echo $numero; ?>
-        </p>
-        <?php
     }
 ?>
-<input type="hidden" id="codegame" name="codegame" value="<?php echo $codigo['enigmaid'];?>">
+<?php startblock('titulo') ?>
+    <title>Capitulo 1</title>
+    <link rel="stylesheet" href="../Styles/capituloFin.css">
+<?php endblock() ?>
+
+
+<?php startblock('principal') ?>
+
+<div class="background" id="background"></div>
+<div class="ext" id="long">
+    <img id="cancel" onClick="cerrar()"src="../assets/img/cancel.svg" alt="">
+    <p id="textFin">
+    </p>   
+</div>
+
+<p id="progress" style="display:hidden;"> 
+    <?php echo $numero; ?>
+</p>
+
+
 
 <div class="container">
     <!-- Modal -->
@@ -43,7 +50,7 @@
     </div><!-- modal -->
 
 
-<<div class="container">
+<div class="container">
    <div class="card mt-5 bg-transparent">
         <div class="card-header bg-transparent mt-5"></div>
             <div class="row no-gutters">
@@ -59,14 +66,15 @@
                 </div>
     </div>
 
-    <div class="container">
+    <!-- <div class="container"> -->
 
 <div class="btn-group" role="group">
-    <button type="button" class="btn-lg btn-success m-5" id="botonLearnMore" data-toggle="modal" data-target="#modalPage">LEARN MORE
+    <button type="button" onClick="showModal()" class="btn-lg btn-success m-5" id="botonLearnMore">LEARN MORE</button>
     <button class="btn-lg btn-danger m-5" onclick="window.location.href='../views/games/game1.php' ">CONTINUE</button>
 </div>
 
-
+<script src="/Never_Forget/scripts/longText.js"></script>
+<script type="text/javascript" src="../scripts/text.js"></script>
 <?php endblock() ?>
 
 

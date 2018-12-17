@@ -1,10 +1,10 @@
-var enigma = $('#codegame').val();
-console.log("AIXO ES ENIGMACODE: " + enigma);
+var enigma = $('#progress').text();
+console.log("AIXO ES ENIGMACODE: " + enigma.trim());
 
 textMod();
 
 function textMod(){
-switch (enigma) {
+switch (enigma.trim()) {
     case "1":
     //ANTES DEL JUEGO
     $('.titulo').text('Chapter 1 - Bombing');
@@ -20,7 +20,7 @@ switch (enigma) {
     $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
     break;
 
-    case 2:
+    case "2":
     //BEFORE GAME
     $('.titulo').text ('Chapter 2 - Revenge');
     $('#pHistoria').text('Lluís heads to the top of Turó de la Rovira, where anti-aircraft guns have been installed to defend the city.');
@@ -35,7 +35,7 @@ switch (enigma) {
     $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
     break;
 
-    case 3:
+    case "3":
     //BEFORE GAME
     $('.titulo').text ('Chapter 3 - Hope');
     $('#pHistoria').text('Upon arriving at the square, the scene is heartbreaking. A bomb has destroyed everything.');
@@ -51,7 +51,7 @@ switch (enigma) {
     $('.versionExtendidaInit').attr('src', "../assets/img/versionExtendidaInit1.png");
     $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
  
-    case 4:
+    case "4":
     //BEFORE GAME
     $('.titulo').text ('Chapter 4 - Wait'); // waiting?
     $('#pHistoria').text('In the hope of finding Pau, Lluís goes to Refugi 307. He finds the shelter half destroyed from the last air strike.');
@@ -67,7 +67,7 @@ switch (enigma) {
     $('.versionExtendidaInit').attr('src', "../assets/img/versionExtendidaInit1.png");
     $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
 
-    case 5:
+    case "5":
     //BEFORE GAME
     $('.titulo').text ('Chapter 5 - Runaway');
     $('#pHistoria').text('  Lluís runs into Pau in prison. They boy had been arrested just a few hours earlier.');
