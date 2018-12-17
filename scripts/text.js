@@ -1,22 +1,11 @@
-var enigma = 3;//$('#codegame').val();
-console.log("AIXO ES ENIGMACODE: " + enigma);
-
-var boton1= '#boton1';
-var boton2= '#boton2';
-var boton3= '#boton3';
-var boton4= '#boton4';
-var boton5= '#boton5';
-var img1 = '#imgPC1';
-var img2 = '#imgPC2';
-var img3 = '#imgPC3';
-var img4 = '#imgPC4';
-var img5 = '#imgPC5';
+var enigma = $('#progress').text();
+console.log("AIXO ES ENIGMACODE: " + enigma.trim());
 
 textMod();
 
 function textMod(){
-switch (enigma) {
-    case 1:
+switch (enigma.trim()) {
+    case "1":
     //ANTES DEL JUEGO
     $('.titulo').text('Chapter 1 - Bombing');
     $('#pHistoria').text ('Barcelona,January 1938,neighborhood of Gracia. As usual, Lluís heads home after a');
@@ -29,16 +18,9 @@ switch (enigma) {
  
     $('.versionExtendidaInit').attr('src', "../assets/img/versionExtendidaInit1.png");
     $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
-    $('.imgQR').attr('src', "../assets/img/QR/QRCarmel.png"); 
-
-    //PROGRESO JUGADOR
-
-    cambioBoton(boton1,"../views/games/game1.php",img1,'../assets/img/ordenadorDiamant.png');
-
-
     break;
 
-    case 2:
+    case "2":
     //BEFORE GAME
     $('.titulo').text ('Chapter 2 - Revenge');
     $('#pHistoria').text('Lluís heads to the top of Turó de la Rovira, where anti-aircraft guns have been installed to defend the city.');
@@ -51,14 +33,9 @@ switch (enigma) {
 
     $('.versionExtendidaInit').attr('src', "../assets/img/versionExtendidaInit1.png");
     $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
-    $('.imgQR').attr('src', "../assets/img/QR/QRNeri.png"); 
-
-    cambioBoton(boton1,"../views/games/game1.php",img1,'../assets/img/ordenadorDiamant.png');
-    cambioBoton(boton2,"../views/games/game2.php",img2,'../assets/img/ordenadorCarmel.png');
-    
     break;
 
-    case 3:
+    case "3":
     //BEFORE GAME
     $('.titulo').text ('Chapter 3 - Hope');
     $('#pHistoria').text('Upon arriving at the square, the scene is heartbreaking. A bomb has destroyed everything.');
@@ -69,19 +46,12 @@ switch (enigma) {
     $('#pHistoriaFin').text ('Lluís searches for clues about his son’s whereabout and, fortunately, the church priest gives him a tip.');
     $('#pHistoriaFin').append ('The boy had been there searching for his father after the first strike. ');
     $('#pHistoriaFin').append ('The last thing he’d heard was that Pau was leaving for Refugi 307.');  
-   
+    break;
 
     $('.versionExtendidaInit').attr('src', "../assets/img/versionExtendidaInit1.png");
     $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
-    $('.imgQR').attr('src', "../assets/img/QR/QR307.png"); 
-
-    cambioBoton(boton1,"../views/games/game1.php",img1,'../assets/img/ordenadorDiamant.png');
-    cambioBoton(boton2,"../views/games/game2.php",img2,'../assets/img/ordenadorCarmel.png');
-    cambioBoton(boton3,"../views/games/game3.php",img3,'../assets/img/ordenadorNeri.png');
-
-  break;
-
-    case 4:
+ 
+    case "4":
     //BEFORE GAME
     $('.titulo').text ('Chapter 4 - Wait'); // waiting?
     $('#pHistoria').text('In the hope of finding Pau, Lluís goes to Refugi 307. He finds the shelter half destroyed from the last air strike.');
@@ -92,19 +62,12 @@ switch (enigma) {
     $('#pHistoriaFin').text ('After waiting for hours, the boy still hasn’t returned to the shelter.');
     $('#pHistoriaFin').append (' Lluís spends the night at the home of one of the neighbors who graciously offers to host him.');
     $('#pHistoriaFin').append ('The next morning, the Nationalists have taken over the city. Barcelona has fallen. Lluís decides to risk it all and search for his son when he’s suddenly captured and taken to the prison at Castell de Montjuïc.');  
-
+    break;
 
     $('.versionExtendidaInit').attr('src', "../assets/img/versionExtendidaInit1.png");
     $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
-    $('.imgQR').attr('src', "../assets/img/QR/QRMontjuic.png"); 
 
-    cambioBoton(boton1,"../views/games/game1.php",img1,'../assets/img/ordenadorDiamant.png');
-    cambioBoton(boton2,"../views/games/game2.php",img2,'../assets/img/ordenadorCarmel.png');
-    cambioBoton(boton3,"../views/games/game3.php",img3,'../assets/img/ordenadorNeri.png');
-    cambioBoton(boton4,"../views/games/game4.php",img4,'../assets/img/ordenador307.png');
-
-    break;
-    case 5:
+    case "5":
     //BEFORE GAME
     $('.titulo').text ('Chapter 5 - Runaway');
     $('#pHistoria').text('  Lluís runs into Pau in prison. They boy had been arrested just a few hours earlier.');
@@ -112,24 +75,11 @@ switch (enigma) {
     
     //AFTER GAME
     $('#pHistoriaFin').text ('There’s an incident in the courtyard that distracts the guards, which the father and son take advantage of to escape down through the sewer and make it to a safe place. They are finally free and together again.');
+    break;
+
     $('.versionExtendidaInit').attr('src', "../assets/img/versionExtendidaInit1.png");
     $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
 
-    cambioBoton(boton1,"../views/games/game1.php",img1,'../assets/img/ordenadorDiamant.png');
-    cambioBoton(boton2,"../views/games/game2.php",img2,'../assets/img/ordenadorCarmel.png');
-    cambioBoton(boton3,"../views/games/game3.php",img3,'../assets/img/ordenadorNeri.png');
-    cambioBoton(boton4,"../views/games/game4.php",img4,'../assets/img/ordenador307.png');
-    cambioBoton(boton5,"../views/games/game5.php",img5,'../assets/img/ordenadorMontjuic.png');
-
-
-  break;
   }
 
-
-  function cambioBoton(boton, rutaB, img, rutaI){
-    $(boton).val("JUGAR");
-    $(boton).attr('href', rutaB);
-    $(boton).attr('class', 'btn-lg btn-success mb-5');
-    $(img).attr('src', rutaI);
-    }
 }
