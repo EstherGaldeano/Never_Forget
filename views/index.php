@@ -153,10 +153,11 @@ include "../templates/master.php" ?>
             </div>
         </div>  
         <div id="texto" class="texto text-center">
-            <p id ="indexText" class="text-white">España está en plena Guerra Civil entre republicanos y nacionalistas</p>
-            <p id ="indexText" class="text-white">El bando nacionalista gana posiciones gracias a la ayuda de países afines</p>
-            <p id ="indexText" class="text-white">Barcelona, capital de Catalunya,</p>
-            <p id ="indexText" class="text-white">Resiste</p>
+             <p id ="indexText" class="text-white">1938<br>Spain is in the midst of a civil war between Republican and Nationalist factions.
+             The Nationalists are gaining ground thanks to the help of like-minded countries.
+             <br>Barcelona, the capital of Catalonia, has resisted thus far.             
+             </p>
+
 
             <?php if(isset($_SESSION['userLoged'])){?>
                 <button type="button" class="btn-lg btn-danger regular-button mr-2 button"  data-toggle="modal" data-target="#LoginModal" disabled="true">LOG IN</button>
