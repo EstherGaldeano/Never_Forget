@@ -18,7 +18,7 @@
         <h2 class="text-white text-center">Capítulo 1</h2>
         <p class="text-white text-center" id="pProgress1"></p>
           <div class="col-sm-12 text-center">
-          <input type='button' class="btn-lg btn-success mb-5" value="" id='boton1' href="../views/games/game1.php">
+          <a class="btn-lg btn-success mb-5" id='boton1' href=""></a>
           </div>
       </div>
 
@@ -27,7 +27,7 @@
         <h2 class="text-white text-center">Capítulo 2</h2>
         <p class="text-white text-center" id="pProgress2"></p>
           <div class="col-sm-12 text-center">
-          <input type='button' class="btn-lg btn-danger mb-5" value="BLOQUEADO" id='boton2' href="">
+          <a class="btn-lg btn-danger mb-5" id='boton2' href="">BLOQUEADO</a>
           </div>
     </div>
 
@@ -37,7 +37,7 @@
         <h2 class="text-white text-center">Capítulo 3</h2>
         <p class="text-white text-center"  id="pProgress3"></p>
           <div class="col-sm-12 text-center">
-          <input type='button' class="btn-lg btn-danger mb-5" value="BLOQUEADO" id='boton3' href="">
+          <a class="btn-lg btn-danger mb-5" id='boton3' href="">BLOQUEADO</a>
           </div>
       </div>
   </div>
@@ -56,7 +56,7 @@
         <h2 class="text-white text-center">Capítulo 4</h2>
         <p class="text-white text-center" id="pProgress4"></p>
           <div class="col-sm-12 text-center">
-          <input type='button' class="btn-lg btn-danger mb-5" value="BLOQUEADO" id='boton4' href="">
+          <a class="btn-lg btn-danger mb-5" id='boton4' href="">BLOQUEADO</a>
           </div>
       </div>
 
@@ -65,7 +65,7 @@
       <h2 class="text-white text-center">Final</h2>
       <p class="text-white text-center" id="pProgress5"></p>
         <div class="col-sm-12 text-center">
-        <input type='button' class="btn-lg btn-danger mb-5" value="BLOQUEADO" id='boton5' href="">
+        <a class="btn-lg btn-danger mb-5" id='boton5' href="">BLOQUEADO</a>
         </div>
     </div>
 
