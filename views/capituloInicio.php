@@ -1,12 +1,17 @@
-<?php include "../templates/masterGames.php" ?>
+<?php include "../templates/masterGames.php"; 
+      include '../librerias/bd.php';?>
 <script type="text/javascript" src="../scripts/text.js"></script>
 
 <?php startblock('titulo') ?>
     <title>Capitulo 1</title>
     <?php endblock() ?>
 
-
 <?php startblock('principal') ?>
+
+<?php $enigmacode = "code1";
+ $codigo =  selectEnigmaByCode($enigmacode); ?>
+
+<input type="hidden" id="codegame" name="codegame" value="<?php echo $codigo['enigmaid'];?>">
 
 <div class="container">
     <!-- Modal -->

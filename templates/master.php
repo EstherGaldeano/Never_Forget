@@ -34,7 +34,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/Never_Forget/librerias/ti.php";
 <body>
         
         <nav class="navSize navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">NEVER FORGET</a>
+            <a class="navbar-brand" href="index.php">NEVER FORGET</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
