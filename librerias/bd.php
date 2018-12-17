@@ -86,6 +86,10 @@ function exeinsertUser($name, $email, $password, $repassword){
         if($password !== $repassword){
             throw new Exception('Las contraseñas no coinciden');
         }
+
+        //Encriptar contraseña en blowfish
+        $password = encriptPassword($password);
+        
         $conn = openBD();
 
         // prepare sql and bind parameters
@@ -128,6 +132,9 @@ function selectUsuarioByPassword($email, $password){
         elseif( $password == ""){
             throw new Exception('El campo "password" no puede estar vacio');
         }
+
+        $password = encriptPassword($password);
+
         $conn = openBD();
 
         $sentencia = $conn->prepare("SELECT * FROM users WHERE email = :email AND password = :password");
@@ -181,6 +188,19 @@ function selectEnigmaByCode($enigmacode){
     }
     $conn = closeBD();
     
+}
+
+function encriptPassword($password){
+    if (CRYPT_BLOWFISH == 1)
+    {
+        $password = crypt($password,'$2a$09$adventureneverforget$'); 
+    }
+    else
+    {
+        echo "Blowfish DES not supported.\n<br>";
+    }
+
+    return $password;
 }
 
 ?>
