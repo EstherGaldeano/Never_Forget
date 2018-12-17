@@ -5,6 +5,7 @@
 <?php startblock('titulo') ?>
     <title>Capitulo 1</title>
     <?php endblock() ?>
+<?php endblock() ?>
 
 <?php startblock('principal') ?>
 
