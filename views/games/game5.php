@@ -38,7 +38,7 @@
         <div class="col">
         <button id="continuar" style="display: none" class="btn btn-next">Continue</button>
         <button onclick="siguiente()" id="siguiente" class="btn btn-next">Next</button>
-        <button onclick="pista()" id="pista" class="btn btn-outline-danger btn-pista">Dame una pista!</button>
+        <button onclick="pista()" id="pista" class="btn btn-outline-danger btn-pista">Give me a clue</button>
         <span id="hueco-pista"></span>
         </div>
         </div>
@@ -58,7 +58,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-modal-header">
-                    <h5 class="modal-title">Consejo</h5>
+                    <h5 class="modal-title">Advice</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button>
@@ -81,9 +81,9 @@
                     </button>
                 </div>
                 <div class="modal-body bg-modal-body">
-                    <p>- Cuando completes la palabra pasa a la siguiente.</p>
-                    <p>- Haz click sobre las letras para ir completando la palabra.</p>
-                    <p>- Si estás bloqueado clica en Dame una pista.</p>
+                    <p>- When you complete the word / phrase, go to the next one.</p>
+                    <p>- Click on the letters to complete the word / phrase.</p>
+                    <p>- If you are blocked click on "Give me a clue".</p>
                 </div>
             </div>
         </div>
