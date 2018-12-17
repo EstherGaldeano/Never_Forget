@@ -160,7 +160,7 @@ function selectUsuarioByPassword($email, $password){
                 "role" => $result['role']
             ];
             //print_r($_SESSION['userInfo']);
-            //print_r($_SESSION['userLoged']);
+            //print_r($_SESSION['userLoged']);//
 
         }       
     }
