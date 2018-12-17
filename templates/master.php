@@ -43,6 +43,11 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/Never_Forget/librerias/ti.php";
                     <a class="nav-item nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="contextoHistorico.php">Historic Context <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="../views/about_us.php">About us <span class="sr-only">(current)</span></a>
+                    <?php if(isset($_SESSION['userLoged'])){ ?>
+                        <?php if($_SESSION['userLoged']['role'] == 1){ ?>
+                            <a href="admin.php" >Admin</a>
+                        <?php } ?>
+                    <?php } ?>
                     
                 </div>
                 <div class="dropdown col-1 float-right">

@@ -100,8 +100,8 @@
     #puzzle{
         z-index: -3;
         position: absolute;
-        top: 10%;
-        left: 23%;
+        top: 8%;
+        left: 25%;
     }
     #win{
         display: none;
@@ -135,12 +135,15 @@
         z-index: 1000;
         outline:none;
     }
-    #winContinue:hover{
+    /* #winContinue:hover{
         cursor: pointer;
         background-color: black;
         text: white;
         border-color: transparent;
-       
+        */
+    }
+    a:link{
+        text-decoration: none;
     }
     #winContinue h1{
         margin-top: 3%;

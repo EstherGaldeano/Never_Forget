@@ -43,9 +43,9 @@ function openBD(){
     $password = "Diesfrjox2";
     */
 
-    $servername = "localhost:3307";
+    $servername = "localhost";
     $username = "root";
-    $password = "root";
+    $password = "";
 
      try {
         $conn = new PDO("mysql:host=$servername;dbname=adventur3;cahrset=utf8", $username, $password);
@@ -88,7 +88,7 @@ function exeinsertUser($name, $email, $password, $repassword){
         }
 
         //Encriptar contraseña en blowfish
-        $password = encriptPassword($password);
+        //$password = encriptPassword($password);
         
         $conn = openBD();
 
@@ -133,7 +133,7 @@ function selectUsuarioByPassword($email, $password){
             throw new Exception('El campo "password" no puede estar vacio');
         }
 
-        $password = encriptPassword($password);
+        //$password = encriptPassword($password);
 
         $conn = openBD();
 
@@ -157,9 +157,10 @@ function selectUsuarioByPassword($email, $password){
                 "email" => $result['email'],
                 "name" => $result['name'],
                 "progress" => $result['progress'],
-                "role" => $result['progress']
+                "role" => $result['role']
             ];
             //print_r($_SESSION['userInfo']);
+            //print_r($_SESSION['userLoged']);
 
         }       
     }
