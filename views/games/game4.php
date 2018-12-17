@@ -14,7 +14,9 @@
             <div id="puzzle"> 
                 <h1 class="text-white" id="win"></h1>
                 <button id="winContinue" type="button">
-                    <h1 class="text-white"  href="../capituloFin.php">Continue the adventure</h1>
+                    <a class="text-white"  href="../capituloFin.php">
+                        <h1>Continue the adventure</h1>
+                    </a>
                 </button>
                 <div class="row">
                     <div id="cell11" class="cell1" onclick="changeTile(1,1)"></div>
