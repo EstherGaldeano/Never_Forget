@@ -5,12 +5,21 @@
 <?php startblock('titulo') ?>
     <title>Capitulo 1</title>
     <?php endblock() ?>
+<?php endblock() ?>
 
 <?php startblock('principal') ?>
 
-<?php $enigmacode = "code1";
- $codigo =  selectEnigmaByCode($enigmacode); ?>
-
+<?php
+    if(isset($_SESSION['userLoged'])){ 
+        $id= $_SESSION['userLoged']['id'];
+        $numero= selectGame($id);
+        ?>
+        <p class="text-white"> 
+            <?php echo $numero; ?>
+        </p>
+        <?php
+    }
+?>
 <input type="hidden" id="codegame" name="codegame" value="<?php echo $codigo['enigmaid'];?>">
 
 <div class="container">
