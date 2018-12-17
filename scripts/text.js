@@ -1,11 +1,11 @@
-var enigma = $('#codegame').val();
+var enigma = 2;//$('#codegame').val();
 console.log("AIXO ES ENIGMACODE: " + enigma);
 
 textMod();
 
 function textMod(){
 switch (enigma) {
-    case "1":
+    case 1:
     //ANTES DEL JUEGO
     $('.titulo').text('Chapter 1 - Bombing');
     $('#pHistoria').text ('Barcelona,January 1938,neighborhood of Gracia. As usual, Lluís heads home after a');
@@ -18,6 +18,10 @@ switch (enigma) {
  
     $('.versionExtendidaInit').attr('src', "../assets/img/versionExtendidaInit1.png");
     $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
+    $('.imgQR').attr('src', "../assets/img/imgQRCarmel.png"); //pte poner imagen
+
+    
+    
     break;
 
     case 2:
@@ -33,6 +37,7 @@ switch (enigma) {
 
     $('.versionExtendidaInit').attr('src', "../assets/img/versionExtendidaInit1.png");
     $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
+    $('.imgQR').attr('src', "../assets/img/imgQRNeri.png"); //pte poner imagen
     break;
 
     case 3:
@@ -46,11 +51,12 @@ switch (enigma) {
     $('#pHistoriaFin').text ('Lluís searches for clues about his son’s whereabout and, fortunately, the church priest gives him a tip.');
     $('#pHistoriaFin').append ('The boy had been there searching for his father after the first strike. ');
     $('#pHistoriaFin').append ('The last thing he’d heard was that Pau was leaving for Refugi 307.');  
-    break;
+   
 
     $('.versionExtendidaInit').attr('src', "../assets/img/versionExtendidaInit1.png");
     $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
- 
+    $('.imgQR').attr('src', "../assets/img/imgQR307.png"); //pte poner imagen
+  break;
     case 4:
     //BEFORE GAME
     $('.titulo').text ('Chapter 4 - Wait'); // waiting?
@@ -62,11 +68,12 @@ switch (enigma) {
     $('#pHistoriaFin').text ('After waiting for hours, the boy still hasn’t returned to the shelter.');
     $('#pHistoriaFin').append (' Lluís spends the night at the home of one of the neighbors who graciously offers to host him.');
     $('#pHistoriaFin').append ('The next morning, the Nationalists have taken over the city. Barcelona has fallen. Lluís decides to risk it all and search for his son when he’s suddenly captured and taken to the prison at Castell de Montjuïc.');  
-    break;
+
 
     $('.versionExtendidaInit').attr('src', "../assets/img/versionExtendidaInit1.png");
     $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
-
+    $('.imgQR').attr('src', "../assets/img/imgQRMontjuic.png"); //pte poner imagen
+    break;
     case 5:
     //BEFORE GAME
     $('.titulo').text ('Chapter 5 - Runaway');
@@ -75,11 +82,9 @@ switch (enigma) {
     
     //AFTER GAME
     $('#pHistoriaFin').text ('There’s an incident in the courtyard that distracts the guards, which the father and son take advantage of to escape down through the sewer and make it to a safe place. They are finally free and together again.');
-    break;
-
     $('.versionExtendidaInit').attr('src', "../assets/img/versionExtendidaInit1.png");
     $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
-
+  break;
   }
 
 }
