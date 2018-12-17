@@ -24,18 +24,6 @@
         <br><br>The goal is to learn about history from a touristic, recreational and cultural perspective. 
         That’s why we’ve created a linear route throughout the city with five mandatory stops where the user must solve a riddle. 
         </p>
-
-        <!-- <p>Somos Adventur3, un equipo de jovenes programadores que trabaja actualmente para CEPSoft Consulting.
-        <br><br>NeverForget es uno de nuestros proyectos mas ambiciosos que pretende revolucionar el concepto actual de 
-        visita de interes aumentado.
-        NeverForget le da al usuario la posibilidad de hacer un recorrido por la ciudad de Barcelona visitando los sitios mas 
-        relevantes durante la Guerra Civil Española.
-        Toda la experiéncia se basa en sumir al usuario en una historia adaptada al contexto historico de la epoca.
-        <br><br>El objetivo es dar a conocer la historia des de un punto de vista turistico, lúdico y cultural. Para ello hemos 
-        creado un recorrido lineal por la ciudad con cinco paradas obligatorias donde el usuario deberá resolver un enigma en cada una de ellas.
-        
-        </p> -->
-
         <br>
         <h3>Members</h3>
         </div>
@@ -67,9 +55,6 @@
                         <div class="card-body">
 
                             <h5 class="card-title">Jordi Peña</h5>
-                            <p class="card-text">"Always trying to learn something new.<br>I love to cook at home having a nice glass of wine "</p>
-
-                           
                             <div class="card-footer justify-content-center">
                                 <ul>
                                     <li><a href="https://twitter.com/Jordipem" target="_blank"><i class="fa fa-twitter iconAbout"></i></a></li>
@@ -123,7 +108,6 @@
                         <img class="card-img-top rounded-circle" src="../assets/img/avatar/avatar_Francesc.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title name">Francesc Retamal</h5>
-                            <p class="card-text">Pequeña descipción de cada uno</p>
                             <div class="card-footer justify-content-center">
                                 <ul>
                                     <li><a href="https://twitter.com/Fran97Chuk?lang=es" target="_blank"><i class="fa fa-twitter iconAbout"></i></a></li>

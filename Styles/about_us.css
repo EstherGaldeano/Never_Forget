@@ -15,6 +15,7 @@ div .card{
     background-color:transparent;
     border: none;
     padding: 2%; 
+    margin-left: 15%;
 }
 .name{
     text-align: center;
