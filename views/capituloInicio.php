@@ -54,7 +54,6 @@
     </div>
 </div>
 
-
 <script src="/Never_Forget/scripts/longText.js"></script>
 <script type="text/javascript" src="../scripts/text.js"></script>
 <?php endblock() ?>
