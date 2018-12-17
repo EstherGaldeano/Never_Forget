@@ -14,7 +14,7 @@
         $id= $_SESSION['userLoged']['id'];
         $numero= selectGame($id);
         ?>
-        <p class="text-white"> 
+        <p style="display:hidden;"> 
             <?php echo $numero; ?>
         </p>
         <?php

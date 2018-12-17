@@ -15,17 +15,7 @@
 
 <?php startblock('principal') ?>
 
-<?php
-    if(isset($_SESSION['userLoged'])){ 
-        $id= $_SESSION['userLoged']['id'];
-        $numero= selectGame($id);
-        ?>
-        <p class="text-white"> 
-            <?php echo $numero; ?>
-        </p>
-        <?php
-    }
-?>
+
 <div class="background" id="background"></div>
 <div class="ext" id="long">
     <img id="cancel" onClick="cerrar()"src="../assets/img/cancel.svg" alt="">
@@ -54,6 +44,17 @@
     </p>
     
 </div>
+<?php
+    if(isset($_SESSION['userLoged'])){ 
+        $id= $_SESSION['userLoged']['id'];
+        $numero= selectGame($id);
+        ?>
+        <p style="display:hidden;"> 
+            <?php echo $numero; ?>
+        </p>
+        <?php
+    }
+?>
 <div class="container">
    <div class="card mt-5 bg-transparent">
         <div class="card-header bg-transparent mt-5"></div>
