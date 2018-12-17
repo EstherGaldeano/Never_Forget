@@ -214,4 +214,14 @@ function selectGame($id){
     return  $result[0];
     $conn = closeBD();
 }
+
+function updateProgress($id){
+    $conn = openBD();
+
+    $sentencia = $conn->prepare("UPDATE users SET progress = progress+1 WHERE id = :id");
+    $sentencia->bindParam(':id', $id);
+    $sentencia->execute();
+    
+    $conn = closeBD();
+}
 ?>
