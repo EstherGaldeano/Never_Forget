@@ -69,7 +69,7 @@
                      YA PUEDES ACCEDER A LA SIGUIENTE LOCALIZACIÓN:
                 </p>
 
-                <img src="../assets/img/Game2_TunelCarmelQR.png" alt="">
+                <img class="imgQR" src="../assets/img/Game2_TunelCarmelQR.png" alt="">
             
                 </div>
             </div><!-- modal-content -->
