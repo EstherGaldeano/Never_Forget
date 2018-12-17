@@ -1,5 +1,16 @@
-var enigma = 2;//$('#codegame').val();
+var enigma = 5;//$('#codegame').val();
 console.log("AIXO ES ENIGMACODE: " + enigma);
+
+var boton1= '#boton1';
+var boton2= '#boton2';
+var boton3= '#boton3';
+var boton4= '#boton4';
+var boton5= '#boton5';
+var img1 = '#imgPC1';
+var img2 = '#imgPC2';
+var img3 = '#imgPC3';
+var img4 = '#imgPC4';
+var img5 = '#imgPC5';
 
 textMod();
 
@@ -20,8 +31,11 @@ switch (enigma) {
     $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
     $('.imgQR').attr('src', "../assets/img/imgQRCarmel.png"); //pte poner imagen
 
-    
-    
+    //PROGRESO JUGADOR
+
+    cambioBoton(boton1,"../views/games/game1.php",img1,'../assets/img/ordenadorDiamant.png');
+
+
     break;
 
     case 2:
@@ -38,6 +52,11 @@ switch (enigma) {
     $('.versionExtendidaInit').attr('src', "../assets/img/versionExtendidaInit1.png");
     $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
     $('.imgQR').attr('src', "../assets/img/imgQRNeri.png"); //pte poner imagen
+
+    cambioBoton(boton1,"../views/games/game1.php",img1,'../assets/img/ordenadorDiamant.png');
+    cambioBoton(boton2,"../views/games/game2.php",img2,'../assets/img/ordenadorDiamant.png');
+    
+   
     break;
 
     case 3:
@@ -56,7 +75,13 @@ switch (enigma) {
     $('.versionExtendidaInit').attr('src', "../assets/img/versionExtendidaInit1.png");
     $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
     $('.imgQR').attr('src', "../assets/img/imgQR307.png"); //pte poner imagen
+
+    cambioBoton(boton1,"../views/games/game1.php",img1,'../assets/img/ordenadorDiamant.png');
+    cambioBoton(boton2,"../views/games/game2.php",img2,'../assets/img/ordenadorDiamant.png');
+    cambioBoton(boton3,"../views/games/game3.php",img3,'../assets/img/ordenadorDiamant.png');
+
   break;
+
     case 4:
     //BEFORE GAME
     $('.titulo').text ('Chapter 4 - Wait'); // waiting?
@@ -73,6 +98,12 @@ switch (enigma) {
     $('.versionExtendidaInit').attr('src', "../assets/img/versionExtendidaInit1.png");
     $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
     $('.imgQR').attr('src', "../assets/img/imgQRMontjuic.png"); //pte poner imagen
+
+    cambioBoton(boton1,"../views/games/game1.php",img1,'../assets/img/ordenadorDiamant.png');
+    cambioBoton(boton2,"../views/games/game2.php",img2,'../assets/img/ordenadorDiamant.png');
+    cambioBoton(boton3,"../views/games/game3.php",img3,'../assets/img/ordenadorDiamant.png');
+    cambioBoton(boton4,"../views/games/game4.php",img4,'../assets/img/ordenadorDiamant.png');
+
     break;
     case 5:
     //BEFORE GAME
@@ -84,7 +115,22 @@ switch (enigma) {
     $('#pHistoriaFin').text ('There’s an incident in the courtyard that distracts the guards, which the father and son take advantage of to escape down through the sewer and make it to a safe place. They are finally free and together again.');
     $('.versionExtendidaInit').attr('src', "../assets/img/versionExtendidaInit1.png");
     $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
+
+    cambioBoton(boton1,"../views/games/game1.php",img1,'../assets/img/ordenadorDiamant.png');
+    cambioBoton(boton2,"../views/games/game2.php",img2,'../assets/img/ordenadorDiamant.png');
+    cambioBoton(boton3,"../views/games/game3.php",img3,'../assets/img/ordenadorDiamant.png');
+    cambioBoton(boton4,"../views/games/game4.php",img4,'../assets/img/ordenadorDiamant.png');
+    cambioBoton(boton5,"../views/games/game5.php",img5,'../assets/img/ordenadorDiamant.png');
+
+
   break;
   }
 
+
+  function cambioBoton(boton, rutaB, img, rutaI){
+    $(boton).val("JUGAR");
+    $(boton).attr('href', rutaB);
+    $(boton).attr('class', 'btn-lg btn-success mb-5');
+    $(img).attr('src', rutaI);
+    }
 }

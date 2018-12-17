@@ -1,4 +1,5 @@
 <?php include "../templates/master.php" ?>
+<script type="text/javascript" src="../scripts/text.js"></script>
 <?php startblock('head')?>
   <link rel="stylesheet" href="../Styles/userProgress.css">
   <link rel="stylesheet" href="/Never_Forget/Styles/Games.css">
@@ -6,37 +7,37 @@
 <?php startblock('principal') ?>
 
 <div class="container">
-<h1 class="colorSecundario titulo text-center mt-4">Progreso del jugador</h1>
+<h1 class="colorSecundario tituloProgress text-center mt-4">Progreso del jugador</h1>
 
 </div>
 
   <div class="container mt-5 mb-5">
     <div class="row">
       <div class="col-sm-4">
-        <img src="../assets/img/ordenadorDiamant.png" class="img-fluid mb-2" alt="Responsive image" id=imgPC>
+        <img src="../assets/img/ordenadorDiamant.png" class="img-fluid mb-2" alt="Responsive image" id=imgPC1>
         <h2 class="text-white text-center">Capítulo 1</h2>
-        <p class="text-white text-center" id="pProgress1">El bombardeo ha comenzado, hay que buscar un lugar donde esconderse</p>
+        <p class="text-white text-center" id="pProgress1"></p>
           <div class="col-sm-12 text-center">
-            <button type="button" id= "boton1" class="btn-lg btn-success mb-5" href="index.php">JUGAR</button>
+          <input type='button' class="btn-lg btn-success mb-5" value="" id='boton1' href="../views/games/game1.php">
           </div>
       </div>
 
       <div class="col-sm-4">
-        <img src="../assets/img/ordenadorApagado.png" class="img-fluid mb-2" alt="Responsive image" id=imgPC>
+        <img src="../assets/img/ordenadorApagado.png" class="img-fluid mb-2" alt="Responsive image" id=imgPC2>
         <h2 class="text-white text-center">Capítulo 2</h2>
-        <p class="text-white text-center" id="pProgress2">Avanza en la historia para saber qué pasó</p>
+        <p class="text-white text-center" id="pProgress2"></p>
           <div class="col-sm-12 text-center">
-            <button type="button" id= "boton2" class="btn-lg btn-danger mb-5" href="index.php">BLOQUEADO</button>
+          <input type='button' class="btn-lg btn-danger mb-5" value="BLOQUEADO" id='boton2' href="">
           </div>
     </div>
 
 
       <div class="col-sm-4">
-        <img src="../assets/img/ordenadorApagado.png" class="img-fluid mb-2" alt="Responsive image" id=imgPC>
+        <img src="../assets/img/ordenadorApagado.png" class="img-fluid mb-2" alt="Responsive image" id=imgPC3>
         <h2 class="text-white text-center">Capítulo 3</h2>
-        <p class="text-white text-center"  id="pProgress3">Avanza en la historia para saber qué pasó</p>
+        <p class="text-white text-center"  id="pProgress3"></p>
           <div class="col-sm-12 text-center">
-            <button type="button" id= "boton3" class="btn-lg btn-danger mb-5" href="index.php">BLOQUEADO</button>
+          <input type='button' class="btn-lg btn-danger mb-5" value="BLOQUEADO" id='boton3' href="">
           </div>
       </div>
   </div>
@@ -51,20 +52,20 @@
 </div>
 
     <div class="col-sm-4">
-        <img src="../assets/img/ordenadorApagado.png" class="img-fluid mb-2" alt="Responsive image" id=imgPC>
+        <img src="../assets/img/ordenadorApagado.png" class="img-fluid mb-2" alt="Responsive image" id=imgPC4>
         <h2 class="text-white text-center">Capítulo 4</h2>
-        <p class="text-white text-center" id="pProgress4">Avanza en la historia para saber qué pasó</p>
+        <p class="text-white text-center" id="pProgress4"></p>
           <div class="col-sm-12 text-center">
-            <button type="button" id= "boton4" class="btn-lg btn-danger" href="index.php">BLOQUEADO</button>
+          <input type='button' class="btn-lg btn-danger mb-5" value="BLOQUEADO" id='boton4' href="">
           </div>
       </div>
 
     <div class="col-sm-4">
-      <img src="../assets/img/ordenadorApagado.png" class="img-fluid mb-2" alt="Responsive image" id=imgPC>
+      <img src="../assets/img/ordenadorApagado.png" class="img-fluid mb-2" alt="Responsive image" id=imgPC5>
       <h2 class="text-white text-center">Final</h2>
-      <p class="text-white text-center" id="pProgress5">Avanza en la historia para saber qué pasó</p>
+      <p class="text-white text-center" id="pProgress5"></p>
         <div class="col-sm-12 text-center">
-          <button type="button" id= "boton5" class="btn-lg btn-danger" href="index.php">BLOQUEADO</button>
+        <input type='button' class="btn-lg btn-danger mb-5" value="BLOQUEADO" id='boton5' href="">
         </div>
     </div>
 
