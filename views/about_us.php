@@ -14,7 +14,17 @@
         <div class="abstract">
         <h3>About the team</h3>
         <br>
-        <p>Somos Adventur3, un equipo de jovenes programadores que trabaja actualmente para CEPSoft Consulting.
+
+        <p>
+        We are Adventur3, a team of young programmers currently working for CEPSoft Consulting. 
+        <br><br>NeverForget is one of our most ambitious projects, aimed at revolutionizing the current concept of augmented visits.
+        NeverForget allows the user to follow a route through the city of Barcelona and visit the most emblematic sites of the Spanish Civil War.
+        The entire experience is based on immersing the user in a story adapted to the historical context of the period.
+        <br><br>The goal is to learn about history from a touristic, recreational and cultural perspective. 
+        That’s why we’ve created a linear route throughout the city with five mandatory stops where the user must solve a riddle. 
+        </p>
+
+        <!-- <p>Somos Adventur3, un equipo de jovenes programadores que trabaja actualmente para CEPSoft Consulting.
         <br><br>NeverForget es uno de nuestros proyectos mas ambiciosos que pretende revolucionar el concepto actual de 
         visita de interes aumentado.
         NeverForget le da al usuario la posibilidad de hacer un recorrido por la ciudad de Barcelona visitando los sitios mas 
@@ -23,7 +33,8 @@
         <br><br>El objetivo es dar a conocer la historia des de un punto de vista turistico, lúdico y cultural. Para ello hemos 
         creado un recorrido lineal por la ciudad con cinco paradas obligatorias donde el usuario deberá resolver un enigma en cada una de ellas.
         
-        </p>
+        </p> -->
+
         <br>
         <h3>Members</h3>
         </div>
