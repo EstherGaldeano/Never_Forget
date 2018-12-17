@@ -54,7 +54,7 @@
                         <img class="card-img-top rounded-circle" src="../assets/img/avatar/avatar_JordiPe.png" alt="Card image cap">
                         <div class="card-body">
 
-                            <h5 class="card-title">Jordi Peña</h5>
+                            <h5 class="card-title name">Jordi Peña</h5>
                             <div class="card-footer justify-content-center">
                                 <ul>
                                     <li><a href="https://twitter.com/Jordipem" target="_blank"><i class="fa fa-twitter iconAbout"></i></a></li>

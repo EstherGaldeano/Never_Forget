@@ -13,8 +13,8 @@
   
             <div id="puzzle"> 
                 <h1 class="text-white" id="win"></h1>
-                <button id="winContinue">
-                    <h1 class="text-white">Continue the adventure</h1>
+                <button id="winContinue" type="button">
+                    <h1 class="text-white"  href="../capituloFin.php">Continue the adventure</h1>
                 </button>
                 <div class="row">
                     <div id="cell11" class="cell1" onclick="changeTile(1,1)"></div>

@@ -173,7 +173,7 @@ function solved() {
                document.getElementById("cell"+row+column).style.filter= "blur(2px)";
            }
        }
-       document.getElementById("puzzle").style.transform= "scale(1.2)";
+       document.getElementById("puzzle").style.transform= "scale(1.1)";
        document.getElementById("win").style.display= "block";
        document.getElementById("winContinue").style.display= "block";
 }
