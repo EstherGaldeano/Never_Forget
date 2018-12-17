@@ -11,7 +11,7 @@
 ?>
 
 <?php startblock('head') ?>
-    <title>Capitulo <?php $numero ?></title>
+    <title>Capitulo <?php echo $numero ?></title>
     <link rel="stylesheet" href="../Styles/capituloFin.css">
     
 <?php endblock() ?>
@@ -50,7 +50,7 @@
 <div class="container">
     <div class="btn-group" role="group">
         <button type="button" onClick="showModal()" class="btn-lg btn-success m-5" id="botonLearnMore">LEARN MORE
-        <button type="button" class="btn-lg btn-danger m-5" onclick="window.location.href='../views/games/game1.php' ">CONTINUE
+        <button type="button" class="btn-lg btn-danger m-5" onclick="window.location.href='../views/games/game<?php echo $numero ?>.php' ">CONTINUE
     </div>
 </div>
 

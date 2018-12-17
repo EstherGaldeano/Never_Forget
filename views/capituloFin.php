@@ -11,7 +11,7 @@
 ?>
 
 <?php startblock('head') ?>
-    <title>Capitulo <?php $numero ?></title>
+    <title>Capitulo <?php echo $numero ?></title>
     <link rel="stylesheet" href="../Styles/capituloFin.css">
     
 <?php endblock() ?>
@@ -26,6 +26,7 @@
     <p id="textFin">
     </p>   
 </div>
+
 <p id="progress" style="display:hidden;"> 
     <?php echo $numero; ?>
 </p>
