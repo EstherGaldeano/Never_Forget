@@ -1,4 +1,4 @@
-var enigma = 5;//$('#codegame').val();
+var enigma = 3;//$('#codegame').val();
 console.log("AIXO ES ENIGMACODE: " + enigma);
 
 var boton1= '#boton1';
@@ -29,7 +29,7 @@ switch (enigma) {
  
     $('.versionExtendidaInit').attr('src', "../assets/img/versionExtendidaInit1.png");
     $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
-    $('.imgQR').attr('src', "../assets/img/imgQRCarmel.png"); //pte poner imagen
+    $('.imgQR').attr('src', "../assets/img/QR/QRCarmel.png"); 
 
     //PROGRESO JUGADOR
 
@@ -51,12 +51,11 @@ switch (enigma) {
 
     $('.versionExtendidaInit').attr('src', "../assets/img/versionExtendidaInit1.png");
     $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
-    $('.imgQR').attr('src', "../assets/img/imgQRNeri.png"); //pte poner imagen
+    $('.imgQR').attr('src', "../assets/img/QR/QRNeri.png"); 
 
     cambioBoton(boton1,"../views/games/game1.php",img1,'../assets/img/ordenadorDiamant.png');
-    cambioBoton(boton2,"../views/games/game2.php",img2,'../assets/img/ordenadorDiamant.png');
+    cambioBoton(boton2,"../views/games/game2.php",img2,'../assets/img/ordenadorCarmel.png');
     
-   
     break;
 
     case 3:
@@ -74,11 +73,11 @@ switch (enigma) {
 
     $('.versionExtendidaInit').attr('src', "../assets/img/versionExtendidaInit1.png");
     $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
-    $('.imgQR').attr('src', "../assets/img/imgQR307.png"); //pte poner imagen
+    $('.imgQR').attr('src', "../assets/img/QR/QR307.png"); 
 
     cambioBoton(boton1,"../views/games/game1.php",img1,'../assets/img/ordenadorDiamant.png');
-    cambioBoton(boton2,"../views/games/game2.php",img2,'../assets/img/ordenadorDiamant.png');
-    cambioBoton(boton3,"../views/games/game3.php",img3,'../assets/img/ordenadorDiamant.png');
+    cambioBoton(boton2,"../views/games/game2.php",img2,'../assets/img/ordenadorCarmel.png');
+    cambioBoton(boton3,"../views/games/game3.php",img3,'../assets/img/ordenadorNeri.png');
 
   break;
 
@@ -97,12 +96,12 @@ switch (enigma) {
 
     $('.versionExtendidaInit').attr('src', "../assets/img/versionExtendidaInit1.png");
     $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
-    $('.imgQR').attr('src', "../assets/img/imgQRMontjuic.png"); //pte poner imagen
+    $('.imgQR').attr('src', "../assets/img/QR/QRMontjuic.png"); 
 
     cambioBoton(boton1,"../views/games/game1.php",img1,'../assets/img/ordenadorDiamant.png');
-    cambioBoton(boton2,"../views/games/game2.php",img2,'../assets/img/ordenadorDiamant.png');
-    cambioBoton(boton3,"../views/games/game3.php",img3,'../assets/img/ordenadorDiamant.png');
-    cambioBoton(boton4,"../views/games/game4.php",img4,'../assets/img/ordenadorDiamant.png');
+    cambioBoton(boton2,"../views/games/game2.php",img2,'../assets/img/ordenadorCarmel.png');
+    cambioBoton(boton3,"../views/games/game3.php",img3,'../assets/img/ordenadorNeri.png');
+    cambioBoton(boton4,"../views/games/game4.php",img4,'../assets/img/ordenador307.png');
 
     break;
     case 5:
@@ -117,10 +116,10 @@ switch (enigma) {
     $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
 
     cambioBoton(boton1,"../views/games/game1.php",img1,'../assets/img/ordenadorDiamant.png');
-    cambioBoton(boton2,"../views/games/game2.php",img2,'../assets/img/ordenadorDiamant.png');
-    cambioBoton(boton3,"../views/games/game3.php",img3,'../assets/img/ordenadorDiamant.png');
-    cambioBoton(boton4,"../views/games/game4.php",img4,'../assets/img/ordenadorDiamant.png');
-    cambioBoton(boton5,"../views/games/game5.php",img5,'../assets/img/ordenadorDiamant.png');
+    cambioBoton(boton2,"../views/games/game2.php",img2,'../assets/img/ordenadorCarmel.png');
+    cambioBoton(boton3,"../views/games/game3.php",img3,'../assets/img/ordenadorNeri.png');
+    cambioBoton(boton4,"../views/games/game4.php",img4,'../assets/img/ordenador307.png');
+    cambioBoton(boton5,"../views/games/game5.php",img5,'../assets/img/ordenadorMontjuic.png');
 
 
   break;
