@@ -47,14 +47,12 @@
         </div>
     </div>
 </div>
-    <div class="container">
-    
-
-<div class="btn-group" role="group">
-    <button type="button" onClick="showModal()" class="btn-lg btn-success m-5" id="botonLearnMore">LEARN MORE
-    <button type="button" class="btn-lg btn-danger m-5" id="botonQR" data-toggle="modal" data-target="#modalQR">CONTINUE
+<div class="container">
+    <div class="btn-group" role="group">
+        <button type="button" onClick="showModal()" class="btn-lg btn-success m-5" id="botonLearnMore">LEARN MORE
+        <button type="button" class="btn-lg btn-danger m-5" id="botonQR" data-toggle="modal" data-target="#modalQR">CONTINUE
+    </div>
 </div>
-
 
 <div class="container">
     <!-- Modal -->
