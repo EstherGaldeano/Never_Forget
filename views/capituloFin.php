@@ -41,7 +41,7 @@
             </div>
             
                 <div class="col-sm-6 mt-5">
-                    <img src="../assets/img/barcelona.jpg" class="img-fluid" id="imgDifuminada">
+                    <img class="img-fluid" id="imgDifuminadaFin">
                 </div>
         </div>
     </div>

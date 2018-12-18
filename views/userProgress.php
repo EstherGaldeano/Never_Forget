@@ -28,9 +28,9 @@ include '../librerias/bd.php';
       <div class="col-sm-4">
         <img src="../assets/img/ordenadorDiamant.png" class="img-fluid mb-2" alt="Responsive image" id=imgPC1>
         <h2 class="text-white text-center">Capítulo 1</h2>
-        <p class="text-white text-center" id="pProgress1"></p>
+        <p class="text-white text-center" id="pProgress1">BLOQUEADO</p>
           <div class="col-sm-12 text-center">
-          <a class="btn-lg btn-success mb-5" id='boton1' href="capituloInicio.php"></a>
+          <a class="btn-lg btn-danger mb-5" id='boton1' href="capituloInicio.php"></a>
 
           </div>
       </div>
