@@ -164,6 +164,7 @@ var mostrado = false;
       if(numPalabra > 2){
         btnNext.style.display = 'none';
         btnContinuar.style.display = 'inline';
+        numPalabra = 0;
       }
       //Guardamos la posicion de la palabra en el array en una cookie para no perder la variable al hacer reload
       setCookie("numParaula", numPalabra, 0);
