@@ -29,7 +29,7 @@ window.location.reload();
 // FUNCION PRINCIPAL
 
 function game(){
-
+  inicialize();
   countDown();
 
   //FUNCION GIRAR CARTA

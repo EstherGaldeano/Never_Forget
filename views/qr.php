@@ -44,9 +44,11 @@
 
 ?>
 
+
         <div style="width:100%; height:100%;">
            <p class="text-white" style="font-size: 6rem; margin-top: 16%; margin-left:8%;">You have completed all the riddles. We hope to see you soon again!</p>
            <button type="button" class="btn btn-danger btn-lg btn-block" style="position:fixed; bottom:0;" onClick="location.href='index.php'">FINISH</button>
+
         </div>
 
 <?php

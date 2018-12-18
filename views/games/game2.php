@@ -19,7 +19,7 @@
     
 <!--GAME-->
 
-<script type="text/javascript" src="../../scripts/games/game2/game2.js"></script>
+
 
 
 <!--BOOTSTRAP-->
@@ -32,8 +32,9 @@
 
 <?php startblock('principal') ?>
 
-<body onload="inicialize()">
-
+<!-- <body onload="inicialize()"> -->
+<body>
+  
   <div class="container" >
 
 
@@ -149,4 +150,6 @@
 
 
 </body>
+
+<script type="text/javascript" src="../../scripts/games/game2/game2.js"></script>
 <?php endblock() ?>
