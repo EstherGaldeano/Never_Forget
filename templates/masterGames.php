@@ -1,7 +1,6 @@
-<?php 
-    session_start();
-    require_once $_SERVER["DOCUMENT_ROOT"] . "/Never_Forget/librerias/ti.php";
-?>
+<?php session_start(); ?>
+<?php require_once $_SERVER["DOCUMENT_ROOT"] . "/Never_Forget/librerias/ti.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
