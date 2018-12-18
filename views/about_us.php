@@ -93,9 +93,9 @@
                             <p class="card-text"></p>
                             <div class="card-footer justify-content-center">
                                 <ul>
-                                    <li><a href="" target="_blank"><i class="fa fa-twitter iconAbout"></i></a></li>
+                                    <li><a href="https://twitter.com/DiegoRodri2124" target="_blank"><i class="fa fa-twitter iconAbout"></i></a></li>
                                     <li><a href="" target="_blank"><i class="fa fa-linkedin iconAbout"></i></a></li>
-                                    <li><a href="" target="_blank"><i class="fa fa-instagram iconAbout"></i></a></li>    
+                                    <li><a href="https://www.instagram.com/diegorodriguezmolina/" target="_blank"><i class="fa fa-instagram iconAbout"></i></a></li>    
                                 </ul> 
                             </div>
                         </div>
