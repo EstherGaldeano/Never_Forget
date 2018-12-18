@@ -117,7 +117,7 @@ var mostrado = false;
     compruebaFin();
   
     if(cont == 2 && btnPista.disabled == false && mostrado == false){
-      mostrarModalPista('You have few attempts left, click on "Give me a clue", it will help you solve it.');
+      mostrarModalPista('You have few attempts left, click on "Give me a clue" it will help you to solve it.');
       mostrado = true;
     }
   }
@@ -242,7 +242,7 @@ var mostrado = false;
   function sumarSegundo(){
     segundos++;
     if(segundos == 90 && btnPista.disabled == false){
-      mostrarModalPista('You have been in the enigma for quite some time, clicking on "Give me a clue" will help you solve it.');
+      mostrarModalPista('This is taking too much time, clicking on "Give me a clue" will help you to solve it.');
     }
   }
   

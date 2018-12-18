@@ -2,13 +2,13 @@ let score = 0;
 let currentQuestion = 0;
 let questions =[
     {
-        title: "What day began the Spanish Civil War?",
-        answers: ["El 10 de mayo de 1936", "El 22 de julio de 1939", "El 22 de junio de 1939", "El 12 de mayo de 1936"],
-        correct: 2
+        title: "What day did the Spanish Civil War begin?",
+        answers: ["May 10, 1936", "July 18, 1936", "June 22, 1939", "May 12, 1936"],
+        correct: 1
     },
     {
         title: "What sides faced in the Civil War?",
-        answers: ["Socialistas y Comunistas", "Nacionales y Republicanos", "Monárquicos y Republicanos", "Monárquicos y Nacionales"],
+        answers: ["Socialists and Comunists", "Nacionalists and Republicans", "Monarchicals and Republicans", "Monarchicals and Nacionalists"],
         correct: 1
     },
     {

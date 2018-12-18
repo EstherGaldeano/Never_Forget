@@ -81,9 +81,9 @@
                     </button>
                 </div>
                 <div class="modal-body bg-modal-body">
-                    <p>- When you complete the word / phrase, go to the next one.</p>
-                    <p>- Click on the letters to complete the word / phrase.</p>
-                    <p>- If you are blocked click on "Give me a clue".</p>
+                    <p>- When you complete the word/s, go to the next one.</p>
+                    <p>- Click on the letters to complete the word/s.</p>
+                    <p>- If you need some help, click on "Give me a clue".</p>
                 </div>
             </div>
         </div>

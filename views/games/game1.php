@@ -26,7 +26,7 @@
 <body>
     <div class="start">
         <h2>Quiz of Spanish civil war</h2>
-        <h1>You will have to answer all the questions of the quiz correcly in order to let you pass to the next game, good luck!</h1>
+        <h1>You will have to answer all the questions of the quiz correctly in order to let you pass to the next game, good luck!</h1>
         <a href="#">Start Quiz</a>
     </div>
     
