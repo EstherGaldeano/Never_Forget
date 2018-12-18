@@ -4,6 +4,7 @@
 include "../templates/master.php" ?>
 
     <?php startblock('head') ?>
+        <title>Never Forget</title>
         <link rel="stylesheet" href="../Styles/Tindex.css">
         <link rel="stylesheet" href="../Styles/modals.css">
     <?php endblock() ?>
