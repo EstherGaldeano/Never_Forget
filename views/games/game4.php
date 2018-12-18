@@ -2,7 +2,7 @@
 
 <?php startblock('head') ?>
     <link rel="stylesheet" href="../../Styles/games/game4.css">
-    <title>Capitulo 1</title>
+    <title>Refugi 307</title>
     <script src="../../scripts/games/game4/puzzle.js"></script>
     <meta name="viewport" content="width=500, initial-scale=1">
 <?php endblock() ?> 
