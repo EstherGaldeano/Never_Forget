@@ -1,4 +1,3 @@
-
 <?php
     include "../templates/masterGames.php";
     include '../librerias/bd.php';
@@ -25,11 +24,10 @@
     <img id="cancel" onClick="cerrar()"src="../assets/img/cancel.svg" alt="">
     <p id="textFin">
     </p>   
-</div>
-
-<p id="progress" style="display:hidden;"> 
+    <p id="progress" style="display:hidden;"> 
     <?php echo $numero; ?>
 </p>
+</div>
 
 <div class="container">
    <div class="card mt-5 bg-transparent">
