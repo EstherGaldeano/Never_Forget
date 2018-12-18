@@ -35,23 +35,20 @@
     <h2>CONGRATULATIONS!</h2>
     <p id="gameWin" class="card-text mx-auto">You're ready for the next riddle!</p>
   </div>
-</div>
-   
- 
-                
-            
+</div> 
   
 </div>
 <?php
+
     }else{
 
 ?>
 
-        <div>
-           You have completed all the riddles. We hope to see you soon again!
-           <button type="button" class="btn-lg btn-outline-danger" >
-           <a style="text-decoration:none;color:white;" href="index.php">BACK</a>
-          </button>
+
+        <div style="width:100%; height:100%;">
+           <p class="text-white" style="font-size: 6rem; margin-top: 16%; margin-left:8%;">You have completed all the riddles. We hope to see you soon again!</p>
+           <button type="button" class="btn btn-danger btn-lg btn-block" style="position:fixed; bottom:0;" onClick="location.href='index.php'">FINISH</button>
+
         </div>
 
 <?php
