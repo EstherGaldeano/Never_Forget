@@ -10,7 +10,7 @@
 ?>
 
 <?php startblock('head') ?>
-    <title>Capitulo</title>
+<title>Capitulo <?php echo $numero ?></title>
     <link rel="stylesheet" href="../Styles/capituloFin.css">
     
 <?php endblock() ?>

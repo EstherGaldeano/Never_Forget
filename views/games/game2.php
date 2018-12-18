@@ -114,8 +114,8 @@
     </div>
 
     <div class="modal" tabindex="-1" role="dialog" id="done">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
+     <div class="modal-dialog" role="document">
+       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">You Win!</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -123,10 +123,12 @@
           </button>
         </div>
         <div class="modal-footer bg-secondary">
-          <button type="button" class="btn btn-dark">Continue the Adventure</button>
+          <button type="button" class="btn btn-dark" >
+           <a style="text-decoration:none;color:white;" href="../capituloFin.php">Continue the Adventure</a>
+          </button>
         </div>
-      </div>
-    </div>
+       </div>
+     </div>
   </div>
 
   <div class="modal" tabindex="-1" role="dialog" id="clock">
@@ -144,7 +146,6 @@
       </div>
     </div>
   </div>
-
 
 
 </body>
