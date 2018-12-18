@@ -88,7 +88,7 @@ function exeinsertUser($name, $email, $password, $repassword){
         }
 
         //Encriptar contraseña en blowfish
-        //$password = encriptPassword($password);
+        $password = encriptPassword($password);
         
         $conn = openBD();
 
@@ -133,7 +133,7 @@ function selectUsuarioByPassword($email, $password){
             throw new Exception('El campo "password" no puede estar vacio');
         }
 
-        //$password = encriptPassword($password);
+        $password = encriptPassword($password);
 
         $conn = openBD();
 
