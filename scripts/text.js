@@ -1,5 +1,5 @@
-var enigma = "5";
-//var enigma=$('#progress').text();
+
+var enigma=$('#progress').text();
 console.log("AIXO ES ENIGMACODE: " + enigma.trim());
 
 var boton1= '#boton1';
@@ -34,7 +34,7 @@ switch (enigma.trim()
 
   //PROGRESO JUGADOR
 
-  cambioBoton(boton1,"../views/games/game1.php",img1,'../assets/img/ordenadorDiamant.png');
+  cambioBoton(boton1,"../views/capituloInicio.php",img1,'../assets/img/ordenadorDiamant.png');
 
 
   break;
