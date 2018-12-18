@@ -2,39 +2,43 @@
     include "../templates/masterGames.php";
     include '../librerias/bd.php';
 ?>
+<?php
+    if(isset($_SESSION['userLoged'])){ 
+        $id= $_SESSION['userLoged']['id'];
+        $numero= selectGame($id);
+        $numero -= 1;
+    }
+?>
 <?php startblock('head') ?>
     <title>Capitulo <?php echo $numero ?></title>
     <link rel="stylesheet" href="../Styles/capituloFin.css">
-    
+
 <?php endblock() ?>
 
 
 <?php startblock('principal') ?>
-
 <div class="container">
-    <!-- Modal -->
+<div>
+<p id="progress" style="display:none;"> 
+    <?php echo $numero; ?>
+</p>
+</div>
+
+<div class="card mx-auto mt-5" style="width: 20rem;">
+    <img class="imgQR" style="height:20rem;" alt="">
+  <div class="card-body">
+    <h2>CONGRATULATIONS!</h2>
+    <p id="gameWin" class="card-text mx-auto">You're ready for the next riddle!</p>
+  </div>
+</div>
    
-    
-     <!-- Modal QR-->
-     <div class="modal fade align-content-center" id="modalQR" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-md"> 
-            <div class="modal-content">
-
-                <div class="modal-body">
-               
-                <p>
-                     YA PUEDES ACCEDER A LA SIGUIENTE LOCALIZACIÓN:
-                </p>
-
-                <img class="imgQR" src="../assets/img/Game2_TunelCarmelQR.png" alt="">
+ 
+                
             
-                </div>
-            </div><!-- modal-content -->
-        </div><!-- modal-dialog -->
-    </div><!-- modal -->
-</div><!-- container -->
-
+  
+</div>
 
 
 <script type="text/javascript" src="../scripts/text.js"></script>
+
 <?php endblock() ?>

@@ -24,9 +24,9 @@
     <img id="cancel" onClick="cerrar()"src="../assets/img/cancel.svg" alt="">
     <p id="textFin">
     </p>   
-    <p id="progress" style="display:hidden;"> 
+    <p id="progress" style="display:none;"> 
     <?php echo $numero; ?>
-</p>
+    </p>
 </div>
 
 <div class="container">

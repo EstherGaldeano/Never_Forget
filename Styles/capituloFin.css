@@ -14,7 +14,7 @@ body{
     position: absolute;
     width: 45%;
     height: 800px;
-    left: 33%;
+    left: 28%;
     z-index: 199;
     overflow: auto;
 }

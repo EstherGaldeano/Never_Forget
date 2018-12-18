@@ -22,10 +22,11 @@
 <div class="background" id="background"></div>
 <div class="ext" id="long">
     <img id="cancel" onClick="cerrar()"src="../assets/img/cancel.svg" alt="">
-    <p id="textFin">
+    <p id="textInicio">
     </p>  
-    <p id="progress" style="display:hidden;"> 
-</p> 
+    <p id="progress" style="display:none;"> 
+    <?php echo $numero; ?>
+    </p> 
 </div>
 
 <div class="container">

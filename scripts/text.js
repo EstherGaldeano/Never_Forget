@@ -1,6 +1,6 @@
 
 var enigma= $('#progress').text();
-//console.log("AIXO ES ENIGMACODE: " + enigma.trim());
+console.log("AIXO ES ENIGMACODE: " + enigma.trim());
 
 var boton1= '#boton1';
 var boton2= '#boton2';
