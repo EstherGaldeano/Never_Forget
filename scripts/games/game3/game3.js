@@ -394,8 +394,8 @@ function checkCollision(ball) {
 	}
 
 	// check if player wins
-	//if (window.bricks.length === 0) {
-		if (true) {
+	if (window.bricks.length === 0) {
+	
 		if (!gameEnds) {
 			gameEnds = true;
 			
