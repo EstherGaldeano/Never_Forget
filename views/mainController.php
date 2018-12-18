@@ -26,7 +26,7 @@
             exit();
         }
         else{
-            header('Location: /Never_Forget/views/index.php');
+            header('Location: /Never_Forget/views/userProgress.php');
             exit();
         }      
     }
