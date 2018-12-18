@@ -24,7 +24,7 @@
 
 <script>
     function updateCookie(game){
-        document.cookie = "game = code"+game;
+        document.cookie = "cookieEnigma="+game;
         location.reload();
         alert("Cookie added succesfully");
     }
