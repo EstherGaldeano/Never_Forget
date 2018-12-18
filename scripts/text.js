@@ -1,5 +1,5 @@
-//var enigma = "3";
-var enigma=$('#progress').text();
+var enigma = "5";
+//var enigma=$('#progress').text();
 console.log("AIXO ES ENIGMACODE: " + enigma.trim());
 
 var boton1= '#boton1';

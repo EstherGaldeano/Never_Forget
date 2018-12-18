@@ -33,6 +33,10 @@
         <div class="boton" class="boton text-center">
         <button id="continue" class="btn-lg btn-danger regular-button button" onClick="restartGame();">TRY AGAIN</button>	
         </div>	
+
+        <div class="boton2" class="boton text-center">
+        <button hidden id="aCapFin" class="btn-lg btn-danger regular-button button" onClick="window.location.href='../../views/capituloFin.php'">CONTINUE THE ADVENTUR3</button>	
+        </div>	
 	</div>
 
 <!--easy mode disabled
