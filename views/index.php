@@ -50,8 +50,8 @@ include "../templates/master.php" ?>
     	</div>
 <!-- MODAL LOGIN -->
 
-<div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document" style="width:500px;">
+<div class="modal fullscreen-modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document" style="">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="LoginModalLabel">Log In</h5>
@@ -93,8 +93,8 @@ include "../templates/master.php" ?>
             </div>
         </div>
         <!-- MODAL REGISTRE -->
-        <div class="modal fade" id="RegistreModal" tabindex="-1" role="dialog" aria-labelledby="RegistreModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document" style="width:500px;">
+        <div class="modal fullscreen-modal fade" id="RegistreModal" tabindex="-1" role="dialog" aria-labelledby="RegistreModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document" style="">
                 <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="RegistreModalLabel">Register</h5>
@@ -106,7 +106,7 @@ include "../templates/master.php" ?>
                                 <label for="name">Name</label>
                             </div>
                             <div class="col-75">
-                                <input type="text" id="name" name="name" placeholder="Your e-mail..">
+                                <input type="text" id="name" name="name" placeholder="Your name..">
                             </div>
                         </div>
                         <div class="row">

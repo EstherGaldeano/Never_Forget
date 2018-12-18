@@ -10,11 +10,10 @@
 ?>
 
 <?php startblock('head') ?>
-<title>Capitulo <?php echo $numero ?></title>
+    <title>Capitulo <?php echo $numero ?></title>
     <link rel="stylesheet" href="../Styles/capituloFin.css">
     
 <?php endblock() ?>
-
 
 <?php startblock('principal') ?>
 
@@ -27,6 +26,7 @@
     <p id="progress" style="display:none;"> 
     <?php echo $numero; ?>
     </p> 
+
 </div>
 
 <div class="container">
