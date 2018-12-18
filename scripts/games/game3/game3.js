@@ -79,6 +79,8 @@ function Game() {
 	if (consecutiveGameOvers>2) {
 		this.column = 1;
 		lifeLeft= 5;
+		ballSpeedY =3;
+
 	}
 
 	//child creation
@@ -250,7 +252,7 @@ function Pad(n) {
     window.pad = $('<div id="pad"><div id="touch"></div></div>')
 		.css('width', this.width) //should be this.width
 		.css('height', this.height)
-		.css('top', fieldHeight * 0.75)
+		.css('top', fieldHeight * 0.70)
 		.css('left', field_width / 2 - this.width / 2);
 
 	$('#field').append(window.pad);
@@ -259,14 +261,14 @@ function Pad(n) {
 // Ball config
 function Ball() {
 	var fieldWidth = parseInt($('#field').css('width'));
-	this.width = fieldWidth * 0.10;
+	this.width = fieldWidth * 0.08;
 	this.height = this.width;
 	window.ball = $('<div class="ball"></div>')
 		.css('width', this.width)
 		.css('height', this.height)
 		.css('border-radius', this.width/2)
 		.css('left', fieldWidth/2-this.width/2)
-		.css('top', fieldWidth * (isNewGame ? 0.60 : 0.35));
+		.css('top', fieldWidth * (isNewGame ? 0.35 : 0.20));
 
 	$('#field').append(window.ball);
 }
@@ -367,7 +369,7 @@ function checkCollision(ball) {
 	}
 
 	// bottom collision check
-	if (fieldHeight < ballTop) {
+	if (fieldHeight < ballTop+80) {
 		if (lifeLeft > 1) {
 			lifeLeft--;
 			ball.remove();
@@ -399,11 +401,10 @@ function checkCollision(ball) {
 			document.cookie = "consecutiveGameOvers=0";
 			$('#game-text').text('YOU WIN!');
 			$('#game-over').fadeIn(1000);
-			$('#continue').text('Continue the adventure');
 			ball.remove();
-			//******************************************** */cambiar HREF a siguiente pantalla
-
-			
+			$('#continue').hide();
+			$('#aCapFin').show();
+					
 		}
 	}
 
