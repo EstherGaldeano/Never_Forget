@@ -1,4 +1,3 @@
-
 <?php
     include "../templates/masterGames.php";
     include '../librerias/bd.php';
@@ -11,7 +10,7 @@
 ?>
 
 <?php startblock('head') ?>
-    <title>Capitulo <?php echo $numero ?></title>
+    <title>Capitulo</title>
     <link rel="stylesheet" href="../Styles/capituloFin.css">
     
 <?php endblock() ?>
@@ -24,11 +23,11 @@
 <div class="ext" id="long">
     <img id="cancel" onClick="cerrar()"src="../assets/img/cancel.svg" alt="">
     <p id="textFin">
-    </p>   
-</div>
-<p id="progress" style="display:hidden;"> 
+    </p>  
+    <p id="progress" style="display:hidden;"> 
     <?php echo $numero; ?>
-</p>
+</p> 
+</div>
 
 <div class="container">
    <div class="card mt-5 bg-transparent">

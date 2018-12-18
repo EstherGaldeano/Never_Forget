@@ -16,6 +16,7 @@
     <script src="/Never_Forget/js/jquery-3.3.1.min.js"></script>
     <script src="/Never_Forget/js/popper.min.js"></script>
     <script src="/Never_Forget/js/bootstrap.min.js"></script>
+    
     <?php startblock('head') ?>
     <?php endblock() ?>
 </head>
