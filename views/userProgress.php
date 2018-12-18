@@ -19,6 +19,7 @@
         <p class="text-white text-center" id="pProgress1"></p>
           <div class="col-sm-12 text-center">
           <a class="btn-lg btn-success mb-5" id='boton1' href="capituloInicio.php"></a>
+
           </div>
       </div>
 
