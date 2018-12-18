@@ -43,7 +43,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/Never_Forget/librerias/ti.php";
                     <a class="nav-item nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="contextoHistorico.php">Historic Context <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="../views/about_us.php">About us <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="../views/capituloFin.php">Prueba <span class="sr-only">(current)</span></a>
+                    
                 </div>
                 <div class="dropdown col-2 float-right">
                     
