@@ -68,7 +68,7 @@ function Game() {
     window.bricks = []; //bricks array
     
     //number of bricks 
-	this.column = 3;
+	this.column = 2;
 	this.bricksPerRow = 6;
 
 	//if the player lose, the counter inside cookies add 1
