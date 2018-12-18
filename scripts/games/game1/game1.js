@@ -12,7 +12,7 @@ let questions =[
         correct: 1
     },
     {
-        title: "What painter was inspired by the Bombarde de Guernica to paint the famous painting El Guernica?",
+        title: "What painter was inspired by the Bombardeo de Guernica to paint the famous painting El Guernica?",
         answers: ["Pablo Picasso", "Juan Gris", "Salvador Dalí", "Rafael Alberti"],
         correct: 0
     },
@@ -22,7 +22,7 @@ let questions =[
         correct: 0
     },
     {
-        title: "The last big battle of the war civil where was it?",
+        title: "Where the last big battle of the Civil War took place?",
         answers: ["La Batalla de Guadarrama", "La Batalla de Madrid", "Batalla de Teruel", "La Batalla del Ebro"],
         correct: 3
     },
