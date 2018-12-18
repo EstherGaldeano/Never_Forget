@@ -15,7 +15,7 @@ var img5 = '#imgPC5';
 textMod();
 
 function textMod(){
-switch (enigma//.trim()
+switch (enigma.trim()
 ) {
   case "1":
   //ANTES DEL JUEGO
