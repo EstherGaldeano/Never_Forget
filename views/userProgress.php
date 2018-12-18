@@ -26,11 +26,11 @@ include '../librerias/bd.php';
   <div class="container mt-5 mb-5">
     <div class="row">
       <div class="col-sm-4">
-        <img src="../assets/img/ordenadorDiamant.png" class="img-fluid mb-2" alt="Responsive image" id=imgPC1>
+        <img src="../assets/img/ordenadorApagado.png" class="img-fluid mb-2" alt="Responsive image" id=imgPC1>
         <h2 class="text-white text-center">Capítulo 1</h2>
-        <p class="text-white text-center" id="pProgress1">BLOQUEADO</p>
+        <p class="text-white text-center" id="pProgress1"></p>
           <div class="col-sm-12 text-center">
-          <a class="btn-lg btn-danger mb-5" id='boton1' href="capituloInicio.php"></a>
+          <a class="btn-lg btn-danger mb-5" id='boton1'>BLOQUEADO</a>
 
           </div>
       </div>
@@ -40,7 +40,7 @@ include '../librerias/bd.php';
         <h2 class="text-white text-center">Capítulo 2</h2>
         <p class="text-white text-center" id="pProgress2"></p>
           <div class="col-sm-12 text-center">
-          <a class="btn-lg btn-danger mb-5" id='boton2' href="">BLOQUEADO</a>
+          <a class="btn-lg btn-danger mb-5" id='boton2'>BLOQUEADO</a>
           </div>
     </div>
 
@@ -50,7 +50,7 @@ include '../librerias/bd.php';
         <h2 class="text-white text-center">Capítulo 3</h2>
         <p class="text-white text-center"  id="pProgress3"></p>
           <div class="col-sm-12 text-center">
-          <a class="btn-lg btn-danger mb-5" id='boton3' href="">BLOQUEADO</a>
+          <a class="btn-lg btn-danger mb-5" id='boton3'>BLOQUEADO</a>
           </div>
       </div>
   </div>
@@ -69,7 +69,7 @@ include '../librerias/bd.php';
         <h2 class="text-white text-center">Capítulo 4</h2>
         <p class="text-white text-center" id="pProgress4"></p>
           <div class="col-sm-12 text-center">
-          <a class="btn-lg btn-danger mb-5" id='boton4' href="">BLOQUEADO</a>
+          <a class="btn-lg btn-danger mb-5" id='boton4'>BLOQUEADO</a>
           </div>
       </div>
 
@@ -78,7 +78,7 @@ include '../librerias/bd.php';
       <h2 class="text-white text-center">Final</h2>
       <p class="text-white text-center" id="pProgress5"></p>
         <div class="col-sm-12 text-center">
-        <a class="btn-lg btn-danger mb-5" id='boton5' href="">BLOQUEADO</a>
+        <a class="btn-lg btn-danger mb-5" id='boton5'>BLOQUEADO</a>
         </div>
     </div>
 

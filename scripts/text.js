@@ -58,8 +58,9 @@ switch (enigma.trim()
   $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
   $('.imgQR').attr('src', "../assets/img/QR/QRNeri.png"); 
 
-  cambioBoton(boton1,"../views/games/game1.php",img1,'../assets/img/ordenadorDiamant.png');
+  //cambioBoton(boton1,"../views/games/game1.php",img1,'../assets/img/ordenadorDiamant.png');
   cambioBoton(boton2,"../views/games/game2.php",img2,'../assets/img/ordenadorCarmel.png');
+  mostrarFoto(boton1,img1,'../assets/img/ordenadorDiamant.png');
   
   break;
 
@@ -81,10 +82,10 @@ switch (enigma.trim()
   $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
   $('.imgQR').attr('src', "../assets/img/QR/QR307.png"); 
 
-  cambioBoton(boton1,"../views/games/game1.php",img1,'../assets/img/ordenadorDiamant.png');
-  cambioBoton(boton2,"../views/games/game2.php",img2,'../assets/img/ordenadorCarmel.png');
+ 
   cambioBoton(boton3,"../views/games/game3.php",img3,'../assets/img/ordenadorNeri.png');
-
+  mostrarFoto(boton1,img1,'../assets/img/ordenadorDiamant.png');
+  mostrarFoto(boton2,img2,'../assets/img/ordenadorCarmel.png');
 break;
 
   case "4":
@@ -106,9 +107,9 @@ break;
   $('.imgQR').attr('src', "../assets/img/QR/QRMontjuic.png"); 
 
 
-  cambioBoton(boton1,"../views/games/game1.php",img1,'../assets/img/ordenadorDiamant.png');
-  cambioBoton(boton2,"../views/games/game2.php",img2,'../assets/img/ordenadorCarmel.png');
-  cambioBoton(boton3,"../views/games/game3.php",img3,'../assets/img/ordenadorNeri.png');
+  mostrarFoto(boton1,img1,'../assets/img/ordenadorDiamant.png');
+  mostrarFoto(boton2,img2,'../assets/img/ordenadorCarmel.png');
+  mostrarFoto(boton3,img3,'../assets/img/ordenadorNeri.png');
   cambioBoton(boton4,"../views/games/game4.php",img4,'../assets/img/ordenador307.png');
 
   break;
@@ -124,10 +125,10 @@ break;
   $('.versionExtendidaFin').attr('src', "../assets/img/versionExtendidaFin1.png");
   $('#imgDifuminadaFin').attr('src', "../assets/img/initFin_Montjuic2.jpg"); 
 
-  cambioBoton(boton1,"../views/games/game1.php",img1,'../assets/img/ordenadorDiamant.png');
-  cambioBoton(boton2,"../views/games/game2.php",img2,'../assets/img/ordenadorCarmel.png');
-  cambioBoton(boton3,"../views/games/game3.php",img3,'../assets/img/ordenadorNeri.png');
-  cambioBoton(boton4,"../views/games/game4.php",img4,'../assets/img/ordenador307.png');
+  mostrarFoto(boton1,img1,'../assets/img/ordenadorDiamant.png');
+  mostrarFoto(boton2,img2,'../assets/img/ordenadorCarmel.png');
+  mostrarFoto(boton3,img3,'../assets/img/ordenadorNeri.png');
+  mostrarFoto(boton4, img4,'../assets/img/ordenador307.png');
   cambioBoton(boton5,"../views/games/game5.php",img5,'../assets/img/ordenadorMontjuic.png');
 
 
@@ -141,4 +142,11 @@ function cambioBoton(boton, rutaB, img, rutaI){
   $(boton).attr('class', 'btn-lg btn-success mb-5');
   $(img).attr('src', rutaI);
   }
+
+
+  function mostrarFoto(boton, img, rutaI){
+    $(boton).text("COMPLETADO");
+    $(boton).attr('class', 'btn-lg btn-secondary mb-5');
+    $(img).attr('src', rutaI);
+    }
 }
