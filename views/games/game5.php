@@ -5,7 +5,7 @@
 <?php include "../../templates/masterGames.php" ?>
 
     <?php startblock('head') ?>
-        <title>Enigma 1: Castle of Montjuic</title>
+        <title>Riddle 5: Castle of Montjuic</title>
         <link rel="stylesheet" href="../../Styles/games/game5.css">
         
     <?php endblock() ?>
