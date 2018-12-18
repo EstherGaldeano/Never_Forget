@@ -1,12 +1,34 @@
-<?php include "../templates/masterGames.php" ?>
-<script type="text/javascript" src="../scripts/text.js"></script>
+<?php
+    include "../templates/masterGames.php";
+    include '../librerias/bd.php';
+?>
+<?php
+    if(isset($_SESSION['userLoged'])){ 
+        $id= $_SESSION['userLoged']['id'];
+        $numero= selectGame($id);
+    }
+?>
 
-<?php startblock('titulo') ?>
-    <title>Capitulo 1</title>
-    <?php endblock() ?>
+<?php startblock('head') ?>
+    <title>Capitulo <?php echo $numero ?></title>
+    <link rel="stylesheet" href="../Styles/capituloFin.css">
+    
+<?php endblock() ?>
 
 
 <?php startblock('principal') ?>
+
+
+<div class="background" id="background"></div>
+<div class="ext" id="long">
+    <img id="cancel" onClick="cerrar()"src="../assets/img/cancel.svg" alt="">
+    <p id="textFin">
+    </p>   
+    <p id="progress" style="display:hidden;"> 
+    <?php echo $numero; ?>
+</p>
+</div>
+
 <div class="container">
    <div class="card mt-5 bg-transparent">
         <div class="card-header bg-transparent mt-5"></div>
@@ -21,37 +43,24 @@
                 <div class="col-sm-6 mt-5">
                     <img src="../assets/img/barcelona.jpg" class="img-fluid" id="imgDifuminada">
                 </div>
+        </div>
     </div>
-
-    <div class="container">
-
-<div class="btn-group" role="group">
-    <button type="button" class="btn-lg btn-success m-5" id="botonLearnMore" data-toggle="modal" data-target="#modalPage">LEARN MORE
-    <button type="button" class="btn-lg btn-danger m-5" id="botonQR" data-toggle="modal" data-target="#modalQR">CONTINUE
 </div>
-
+<div class="container">
+    <div class="btn-group" role="group">
+        <button type="button" onClick="showModal()" class="btn-lg btn-success m-5" id="botonLearnMore">LEARN MORE
+        <!-- <form action="mainController.php" method="post" target="iframe"> -->
+        <button type="button" onClick="<?php updateProgress($_SESSION['userLoged']['id']); ?>" name="nextGame" class="btn-lg btn-danger m-5" id="botonQR" data-toggle="modal" data-target="#modalQR">CONTINUE
+        <!-- </form> -->
+        <iframe id="request" style="width:0;height:0;border:0; border:none;"></iframe>
+        
+    </div>
+</div>
 
 <div class="container">
     <!-- Modal -->
-    <div class="modal right fade" id="modalPage" tabindex="-1" role="dialog" aria-labelledby="modalPageLabel2">
-        <div class="modal-dialog modal-lg" role="document" style= "width:600px;"> 
-            <div class="modal-content">
-
-                <div class="modal-header ">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="modalPageLabel2"></h4>
-                </div>   
-
-                <div class="modal-body">
-                <!--IMAGEN DE PÁGINA DE LIBRO-->
-                <img class= "versionExtendidaFin"src="" >
-                </div>
-            </div><!-- modal-content -->
-        </div><!-- modal-dialog -->
-    </div><!-- modal -->
-
-
-
+   
+    
      <!-- Modal QR-->
      <div class="modal fade align-content-center" id="modalQR" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-md"> 
@@ -63,7 +72,7 @@
                      YA PUEDES ACCEDER A LA SIGUIENTE LOCALIZACIÓN:
                 </p>
 
-                <img src="../assets/img/Game2_TunelCarmelQR.png" alt="">
+                <img class="imgQR" src="../assets/img/Game2_TunelCarmelQR.png" alt="">
             
                 </div>
             </div><!-- modal-content -->
@@ -72,7 +81,8 @@
 </div><!-- container -->
 
 
-
+<script src="/Never_Forget/scripts/longText.js"></script>
+<script type="text/javascript" src="../scripts/text.js"></script>
 <?php endblock() ?>
 
 

@@ -4,9 +4,9 @@ body {
 }
 
 #field {
-	background-image:url("../../assets/img/game3_neri2.png");
+	background-image:url("../../assets/img/game3_neri2_.png");
 	max-width: 1152px;
-	height: 1152px;
+	height: 900px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -22,7 +22,7 @@ body {
 }
 
 #countdown {
-	padding-top:500px;
+	padding-top:550px;
 	color:white;
 	text-align: center;
 	font: 90px monospace;
@@ -78,7 +78,7 @@ body {
     background-image:url("../../assets/img/game3_roca.png");
     position: absolute;
     background-repeat:no-repeat;
-    background-size: 110px 100px;
+    background-size: 100px 90px;
     background-position: center; 
 
 	

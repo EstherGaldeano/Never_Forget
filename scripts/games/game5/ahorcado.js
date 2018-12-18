@@ -117,7 +117,7 @@ var mostrado = false;
     compruebaFin();
   
     if(cont == 2 && btnPista.disabled == false && mostrado == false){
-      mostrarModalPista('Te quedan pocos intentos, hacer click en "Dame una pista" te ayudará a resolverlo.');
+      mostrarModalPista('You have few attempts left, click on "Give me a clue" it will help you to solve it.');
       mostrado = true;
     }
   }
@@ -176,7 +176,7 @@ var mostrado = false;
         buttons[i].disabled = true;
       }
       
-      btnNext.innerHTML = "Empezar";
+      btnNext.innerHTML = "Start";
       btnNext.disabled=false;
       btnNext.style.display = 'inline';
       btnPista.disabled=true;
@@ -242,7 +242,7 @@ var mostrado = false;
   function sumarSegundo(){
     segundos++;
     if(segundos == 90 && btnPista.disabled == false){
-      mostrarModalPista('Llevas bastane tiempo en el enigma, hacer click en "Dame una pista" te ayudará a resolverlo.');
+      mostrarModalPista('This is taking too much time, clicking on "Give me a clue" will help you to solve it.');
     }
   }
   

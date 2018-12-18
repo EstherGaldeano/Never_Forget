@@ -16,6 +16,9 @@ include "../templates/master.php" ?>
                 Your browser does not support HTML5 video.
 
         </video>
+        <div id="imgMovil" >
+            <img src="../assets/img/background.jpg" alt="">
+        </div>
 
          <?php  
         if(isset($_SESSION['error'])){?>
@@ -46,41 +49,41 @@ include "../templates/master.php" ?>
     		</div>
     	</div>
 <!-- MODAL LOGIN -->
+
 <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document" style="width:500px;">
                 <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="LoginModalLabel">Log In</h5>
-                </div>
-                <div class="modal-body">
-                    <form action="./mainController.php" method="post">
-                        <div class="row">
-                            <div class="col-25">
-                                <label for="emailLogin">E-mail</label>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="LoginModalLabel">Log In</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form action="./mainController.php" method="post">
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="emailLogin">E-mail</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="emailLogin" name="emailLogin" placeholder="Your e-mail..">
+                                </div>
                             </div>
-                            <div class="col-75">
-                                <input type="text" id="emailLogin" name="emailLogin" placeholder="Your e-mail..">
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="passwordLogin">Password</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="password" id="passwordLogin" name="passwordLogin" placeholder="Your password..">
+                                </div>
+                                <?php 
+                                    if(isset($_SESSION['error'])){?>
+                                <div class="col-25">
+                                </div>
+                                <div class="col-75 pt-2">
+                                <img src="../assets/img/index_error.png" alt="Error" type="img" style="float:left" >
+                                <?php require_once "./partials/mensajes.php"; ?>
+                                </div>
+                                <?php } ?> 
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-25">
-                                <label for="passwordLogin">Password</label>
-                            </div>
-                            <div class="col-75">
-                                <input type="password" id="passwordLogin" name="passwordLogin" placeholder="Your password..">
-                            </div>
-                            <?php 
-                                if(isset($_SESSION['error'])){?>
-                            <div class="col-25">
-                            </div>
-                            <div class="col-75 pt-2">
-                            <img src="../assets/img/index_error.png" alt="Error" type="img" style="float:left" >
-                            <?php require_once "./partials/mensajes.php"; ?>
-                            </div>
-                            <?php } ?> 
-                        </div>
-                   
-                </div>
+                    </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <button type="sumbit" class="btn btn-danger" name="login">Log In</button>
@@ -150,16 +153,20 @@ include "../templates/master.php" ?>
             </div>
         </div>  
         <div id="texto" class="texto text-center">
-            <p id = indexText class="text-black">España está en plena Guerra Civil entre republicanos y nacionalistas</p>
-            <p id = indexText class="text-black">El bando nacionalista gana posiciones gracias a la ayuda de países afines</p>
-            <p id = indexText class="text-black">Barcelona, capital de Catalunya,</p>
-            <p id = indexText class="text-black">Resiste</p>
+             <p id ="indexText" class="text-white">1938<br>Spain is in the midst of a civil war between Republican and Nationalist factions.
+             The Nationalists are gaining ground thanks to the help of like-minded countries.
+             <br>Barcelona, the capital of Catalonia, has resisted thus far.             
+             </p>
+
+
             <?php if(isset($_SESSION['userLoged'])){?>
-                <button type="button" class="btn-lg btn-danger regular-button mr-5"  data-toggle="modal" data-target="#LoginModal" disabled="true">LOG IN</button>
+                <button type="button" class="btn-lg btn-secondary regular-button mr-2 button"  data-toggle="modal" data-target="#LoginModal" disabled="true">LOG IN</button>
+                <button type="button" class="btn-lg btn-secondary regular-button mr-2 button"  data-toggle="modal" data-target="#RegistreModal" disabled="true">REGISTER</button>
             <?php }else{?>
-                <button type="button" class="btn-lg btn-danger regular-button mr-5"  data-toggle="modal" data-target="#LoginModal">LOG IN</button>
+                <button type="button" class="btn-lg btn-danger regular-button mr-2 button"  data-toggle="modal" data-target="#LoginModal">LOG IN</button>
+                <button type="button" class="btn-lg btn-danger regular-button mr-2 button"  data-toggle="modal" data-target="#RegistreModal">REGISTER</button>
             <?php } ?>
-            <button type="button" class="btn-lg btn-danger regular-button mr-5"  data-toggle="modal" data-target="#RegistreModal">REGISTER</button>
+            
         </div> 
 
         <!-- Guarda la el intento de inicio de sesión en una cookie-->

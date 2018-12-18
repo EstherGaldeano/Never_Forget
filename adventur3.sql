@@ -21,7 +21,9 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `adventur3`
 --
-
+drop database if exists adventur3;
+create database if not exists adventur3;
+use adventur3;
 -- --------------------------------------------------------
 
 --

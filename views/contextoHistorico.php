@@ -9,31 +9,33 @@
 <div class="container">
    <div class="card mt-5 bg-transparent border-0">
         <div class="card-header mt-5 bg-transparent border-bottom-0">
-            <h1 class="colorSecundario titulo ">Enero de 1938</h1>
+            <h1 class="colorSecundario titulo ">January 1938 </h1>
             <button type="button" class="btn-lg btn-outline-danger float-right" onclick="location.href='index.php'">VOLVER</button>
         </div>
 
         <div class="row no-gutters">
             <div class="col-sm-6 mt-5">
                 <div class="card-block px-2">
-                    <p class="card-text text-black" id="text"> España se encuentra en plena Guerra Civil entre nacionalistas y republicanos
-                    El bando republicano, está formado por el Gobierno, junto con sindicatos, comunistas,
-                    anarquistas, obreros y campesinos.
-                    En el bando nacionalista, está la parte rebelde del ejército, la burguesía, los terratenientes y,
-                    por lo general, las clases más altas. <br>
+                    <p class="card-text text-white" id="text"> 
                     
-                    El bando republicano está apoyado por la Unión Soviética, que apoya la República por sintonía
-                    ideológica y consideraciones geoestratégicas. Envía armas, si bien están llegando de forma
-                    dispersa y son de peor calidad que las recibidas por los contrarios.
-                    El resto de países democráticos europeos también están del lado de la República, pero en una
-                    posición neutral, la única ayuda que se recibe por su parte son voluntarios de las Brigadas
-                    Internacionales. <br>
+                    Spain is in the midst of a civil war between Nationalists and Republicans. 
+                    The Republican faction is formed by the Government, together with unions,
+                    communists, anarchists, workers and peasants. 
+                    The Nationalist faction is made up of the rebel military,
+                    land owners and, in general, the upper class. <br>
+
+                    The Soviet Union supports the Republican faction on the basis of a shared ideology and geostrategic factors. 
+                    They provide weapons to the Republicans, although only sporadically and of a lesser quality 
+                    than what the Nationalists have access to. 
+                    Other democratic European countries also support the Republic, but from a neutral stance,
+                    providing aid only though International Brigade volunteers.<br>
+
+                    The Nationalist faction, led by General Francisco Franco, receives active support
+                    from the fascists governments of Germany and Italy, which send weapons, ammunition,
+                    soldiers and aerial forces, such as the German Condor Legion.<br>
+                    The Nationalists have occupied practically all of the Iberian Peninsula. 
+                    But Barcelona, the capital of Catalonia, resists...
                     
-                    El bando nacionalista, liderado por el General Francisco Franco, tiene el soporte activo de los
-                    gobiernos fascistas de Alemania e Italia, los cuales dan su apoyo enviando armamento,
-                    munición, soldados y equipos aéreos como la Legión Cóndor alemana.
-                    El bando nacionalista tiene ocupada prácticamente toda la península, pero Barcelona, capital
-                    de Cataluña, resiste…
                 </div>
             </div>
             

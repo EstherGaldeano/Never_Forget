@@ -1,7 +1,12 @@
 .main {
-    background-color: #A5A5A5;
-    color: white;
-    margin-top: 3%;
+    /* background-image: url(../assets/img/textura-negativo-1-aboutUs.jpg); */
+    color:white;
+    margin-top: 5%;
+}
+
+.abstract{
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 div .card{
@@ -10,15 +15,19 @@ div .card{
     background-color:transparent;
     border: none;
     padding: 2%; 
+    margin-left: 15%;
 }
-
+.name{
+    text-align: center;
+}
 .iconAbout {
+    margin-left: -60%;
     color:white;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .card:hover {
-    background-color: #646464;
+    background-color: #b1b1b1;
 }
 
 .titulo {
@@ -41,3 +50,9 @@ li {
     float: left;
     margin-right: 20px;
 }
+
+@media screen and (max-width: 812px) {
+    div .card{
+        margin-left: 15%;
+    }
+}    

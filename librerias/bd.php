@@ -43,9 +43,9 @@ function openBD(){
     $password = "Diesfrjox2";
     */
 
-    $servername = "localhost:3307";
+    $servername = "localhost";
     $username = "root";
-    $password = "root";
+    $password = "";
 
      try {
         $conn = new PDO("mysql:host=$servername;dbname=adventur3;cahrset=utf8", $username, $password);
@@ -86,6 +86,10 @@ function exeinsertUser($name, $email, $password, $repassword){
         if($password !== $repassword){
             throw new Exception('Las contraseñas no coinciden');
         }
+
+        //Encriptar contraseña en blowfish
+        $password = encriptPassword($password);
+        
         $conn = openBD();
 
         // prepare sql and bind parameters
@@ -128,6 +132,9 @@ function selectUsuarioByPassword($email, $password){
         elseif( $password == ""){
             throw new Exception('El campo "password" no puede estar vacio');
         }
+
+        $password = encriptPassword($password);
+
         $conn = openBD();
 
         $sentencia = $conn->prepare("SELECT * FROM users WHERE email = :email AND password = :password");
@@ -150,9 +157,10 @@ function selectUsuarioByPassword($email, $password){
                 "email" => $result['email'],
                 "name" => $result['name'],
                 "progress" => $result['progress'],
-                "role" => $result['progress']
+                "role" => $result['role']
             ];
             //print_r($_SESSION['userInfo']);
+            //print_r($_SESSION['userLoged']);
 
         }       
     }
@@ -165,4 +173,55 @@ function selectUsuarioByPassword($email, $password){
     $conn = closeBD();
 }
 
+function selectEnigmaByCode($enigmacode){
+    try{
+        $conn = openBD();
+
+        $sentencia = $conn->prepare("SELECT * FROM enigma WHERE enigmacode = :enigmacode");
+        $sentencia->bindParam(':enigmacode', $enigmacode);
+        $sentencia->execute();
+        $result = $sentencia->fetch();
+
+        return  $result;
+    }
+    catch(PDOException $e){
+        $_SESSION['error'] = errorMessage($e);
+    }
+    $conn = closeBD();
+    
+}
+
+function encriptPassword($password){
+    if (CRYPT_BLOWFISH == 1)
+    {
+        $password = crypt($password,'$2a$09$adventureneverforget$'); 
+    }
+    else
+    {
+        echo "Blowfish DES not supported.\n<br>";
+    }
+
+    return $password;
+}
+
+function selectGame($id){
+    $conn = openBD();
+
+    $sentencia = $conn->prepare("SELECT progress FROM users WHERE id = :id");
+    $sentencia->bindParam(':id', $id);
+    $sentencia->execute();
+    $result = $sentencia->fetch();
+    return  $result[0];
+    $conn = closeBD();
+}
+
+function updateProgress($id){
+    $conn = openBD();
+
+    $sentencia = $conn->prepare("UPDATE users SET progress = progress+1 WHERE id = :id");
+    $sentencia->bindParam(':id', $id);
+    $sentencia->execute();
+    
+    $conn = closeBD();
+}
 ?>
