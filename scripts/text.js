@@ -12,7 +12,15 @@ var img2 = '#imgPC2';
 var img3 = '#imgPC3';
 var img4 = '#imgPC4';
 var img5 = '#imgPC5';
-textMod();
+//textMod();
+if(checkCookie("cookieEnigma") == parseInt(enigma))
+{
+  textMod();
+}
+else{
+  //alert('You must complete the riddles in order. You are not in the right location.');
+  $('#modalBadLocation').modal();
+}
 
 function textMod(){
 switch (enigma.trim()
@@ -149,4 +157,29 @@ function cambioBoton(boton, rutaB, img, rutaI){
     $(boton).attr('class', 'btn-lg btn-secondary mb-5');
     $(img).attr('src', rutaI);
     }
+}
+
+
+function checkCookie(claveCookie) {
+  var valorCookie = getCookie(claveCookie);
+  if (valorCookie != "") {
+    return valorCookie;
+  } else {
+    return 0;
+  }
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var ca = document.cookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+      }
+  }
+  return "";
 }

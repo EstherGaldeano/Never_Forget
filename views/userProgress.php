@@ -16,7 +16,7 @@ include '../librerias/bd.php';
 <?php startblock('principal') ?>
 
 <div class="container">
-<p id="progress" style="display:hidden;"> 
+<p id="progress" style="visibility:hidden;"> 
     <?php echo $numero; ?>
 </p>
 <h1 class="colorSecundario tituloProgress text-center mt-4">Progreso del jugador</h1>
@@ -87,6 +87,25 @@ include '../librerias/bd.php';
     </div>
   </div>
 </div>
+
+<!--modal si no esta en el ordenador correcto, es decir, qu ela cookie no coincida con el enigma el cual le toque jugar-->
+<div class="modal" tabindex="-1" role="dialog" id="modalBadLocation">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: #ee2b48d0">
+                    <h5 class="modal-title">Error</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body bg-modal-body">
+                  <p>You must complete the riddles in order. You are not in the right location.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     
 <script type="text/javascript" src="../scripts/text.js"></script>    
     
