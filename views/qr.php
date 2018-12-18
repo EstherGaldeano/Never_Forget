@@ -1,5 +1,5 @@
 <?php
-    include "../templates/masterGames.php";
+    include "../templates/master.php";
     include '../librerias/bd.php';
 ?>
 <?php
@@ -11,6 +11,7 @@
 ?>
 <?php startblock('head') ?>
     <title>Capitulo <?php echo $numero ?></title>
+    <link rel="stylesheet" href="../Styles/Tindex.css">
     <link rel="stylesheet" href="../Styles/capituloFin.css">
 
 <?php endblock() ?>
@@ -29,7 +30,7 @@
 </p>
 </div>
 
-<div class="card mx-auto mt-5" style="width: 20rem;">
+<div class="card mx-auto" style="width: 20rem; margin-top:10%;">
     <img class="imgQR" style="height:20rem;" alt="">
   <div class="card-body">
     <h2>CONGRATULATIONS!</h2>
