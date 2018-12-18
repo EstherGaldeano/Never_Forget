@@ -46,7 +46,7 @@
                     <p class="text-white ml-1">TIME</p>
                     <div id="tiempo" class="float-left text-white  mt-1 info"></div>
                 </div>
-                <button class="btn btn-danger" id="abandonar" type="button" onClick="solved()">Leave</button>
+                <button class="btn btn-danger" id="abandonar" type="button" onClick="solved()">Give up</button>
             </div>
      
             
