@@ -6,7 +6,6 @@
 
     if(isset($_POST['nextGame'])){
         updateProgress($_SESSION['userLoged']['id']);
-
         header('Location: /Never_Forget/views/qr.php');
         exit();
         
