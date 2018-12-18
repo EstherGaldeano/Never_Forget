@@ -1,5 +1,14 @@
-<?php include "../templates/master.php" ?>
-<script type="text/javascript" src="../scripts/text.js"></script>
+<?php 
+include "../templates/master.php";
+include '../librerias/bd.php'; 
+?>
+<?php
+    if(isset($_SESSION['userLoged'])){ 
+        $id= $_SESSION['userLoged']['id'];
+        $numero= selectGame($id);
+    }
+?>
+
 <?php startblock('head')?>
   <link rel="stylesheet" href="../Styles/userProgress.css">
   <link rel="stylesheet" href="/Never_Forget/Styles/Games.css">
@@ -7,6 +16,9 @@
 <?php startblock('principal') ?>
 
 <div class="container">
+<p id="progress" style="display:hidden;"> 
+    <?php echo $numero; ?>
+</p>
 <h1 class="colorSecundario tituloProgress text-center mt-4">Progreso del jugador</h1>
 
 </div>
@@ -76,6 +88,6 @@
   </div>
 </div>
     
-    
+<script type="text/javascript" src="../scripts/text.js"></script>    
     
 <?php endblock() ?>
