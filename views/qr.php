@@ -49,7 +49,9 @@
 
         <div>
            You have completed all the riddles. We hope to see you soon again!
-           <button type="button" class="btn-lg btn-outline-danger float-right" onclick="location.href='index.php'">BACK</button>
+           <button type="button" class="btn-lg btn-outline-danger" >
+           <a style="text-decoration:none;color:white;" href="index.php">BACK</a>
+          </button>
         </div>
 
 <?php
