@@ -9,7 +9,7 @@ function cerrar(){
 
 
 var enigma = $('#progress').text();
-console.log(enigma.trim());
+//console.log(enigma.trim());
 textMod();
 function textMod(){
     switch (enigma.trim()) {
