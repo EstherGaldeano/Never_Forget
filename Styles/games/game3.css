@@ -62,6 +62,15 @@ body {
 	font-size: 60px;
 }
 
+#aCapFin{
+	margin-left:auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top:200px;
+	font-family: 'Special Elite', cursive;
+	font-size: 60px;
+}
+
 
 #dialog{
 	background-color: rgb(207, 214, 221);
