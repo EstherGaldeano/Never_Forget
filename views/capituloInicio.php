@@ -25,7 +25,6 @@
     <p id="textFin">
     </p>  
     <p id="progress" style="display:hidden;"> 
-    <?php echo $numero; ?>
 </p> 
 </div>
 

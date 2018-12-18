@@ -4,11 +4,11 @@
     ini_set('display_errors', '1');
     include '../librerias/bd.php';
 
-    // if(isset($_POST['nextGame'])){
-    //     updateProgress($_SESSION['userLoged']['id']);
-    //     header('Location: /Never_Forget/views/capituloFin.php');
-    //     exit();
-    // }
+    if(isset($_POST['nextGame'])){
+        updateProgress($_SESSION['userLoged']['id']);
+        header('Location: /Never_Forget/views/qr.php');
+        exit();
+    }
    
     if(isset($_POST['register'])){
         exeinsertUser($_POST['name'],$_POST['email'], $_POST['password'], $_POST['repassword']);

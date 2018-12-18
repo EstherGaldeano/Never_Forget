@@ -49,9 +49,9 @@
 <div class="container">
     <div class="btn-group" role="group">
         <button type="button" onClick="showModal()" class="btn-lg btn-success m-5" id="botonLearnMore">LEARN MORE
-        <!-- <form action="mainController.php" method="post" target="iframe"> -->
-        <button type="button" onClick="<?php updateProgress($_SESSION['userLoged']['id']); ?>" name="nextGame" class="btn-lg btn-danger m-5" id="botonQR" data-toggle="modal" data-target="#modalQR">CONTINUE
-        <!-- </form> -->
+        <form action="mainController.php" method="post"> 
+            <button type="submit" name="nextGame" class="btn-lg btn-danger m-5">CONTINUE
+        </form> 
         <iframe id="request" style="width:0;height:0;border:0; border:none;"></iframe>
         
     </div>
