@@ -1,5 +1,5 @@
 
-var enigma="5";//$('#progress').text();
+var enigma=$('#progress').text();
 //console.log("AIXO ES ENIGMACODE: " + enigma.trim());
 
 var boton1= '#boton1';
@@ -15,7 +15,7 @@ var img5 = '#imgPC5';
 textMod();
 
 function textMod(){
-switch (enigma//.trim()
+switch (enigma.trim()
 ) {
   case "1":
   //ANTES DEL JUEGO
