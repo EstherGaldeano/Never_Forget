@@ -36,7 +36,7 @@
         <h3>Intentos restantes: <span id="intentos">6</span></h3>
         </div>
         <div class="col">
-        <button id="continuar" style="display: none" class="btn btn-next">Continue</button>
+        <button id="continuar" style="display: none" class="btn btn-next" onClick="location.href='../capituloFin.php'">Continue</button>
         <button onclick="siguiente()" id="siguiente" class="btn btn-next">Next</button>
         <button onclick="pista()" id="pista" class="btn btn-outline-danger btn-pista">Give me a clue</button>
         <span id="hueco-pista"></span>
