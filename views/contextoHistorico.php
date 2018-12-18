@@ -10,7 +10,7 @@
    <div class="card mt-5 bg-transparent border-0">
         <div class="card-header mt-5 bg-transparent border-bottom-0">
             <h1 class="colorSecundario titulo ">January 1938 </h1>
-            <button type="button" class="btn-lg btn-outline-danger float-right" onclick="location.href='index.php'">VOLVER</button>
+            <button type="button" class="btn-lg btn-outline-danger float-right" onclick="location.href='index.php'">BACK</button>
         </div>
 
         <div class="row no-gutters">
