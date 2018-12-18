@@ -394,7 +394,8 @@ function checkCollision(ball) {
 	}
 
 	// check if player wins
-	if (window.bricks.length === 0) {
+	//if (window.bricks.length === 0) {
+		if (true) {
 		if (!gameEnds) {
 			gameEnds = true;
 			
@@ -402,9 +403,11 @@ function checkCollision(ball) {
 			$('#game-text').text('YOU WIN!');
 			$('#game-over').fadeIn(1000);
 			ball.remove();
-			$('#continue').hide();
-			$('#aCapFin').show();
-					
+			$('#continue').text("CONTINUE THE ADVENTURE");
+		//	$('#continue').removeAttr('onclick');
+			$('#continue').attr("onclick", "window.location = '../../../Never_Forget/views/capituloFin.php'");
+		
+
 		}
 	}
 
