@@ -17,6 +17,11 @@
 
 
 <?php startblock('principal') ?>
+
+<?php
+    if($numero!=5){
+
+?>
 <div class="container">
 <div>
 <p id="progress" style="display:none;"> 
@@ -37,7 +42,18 @@
             
   
 </div>
+<?php
+    }else{
 
+?>
+
+        <div>
+            HOLAAA
+        </div>
+
+<?php
+    }
+?>
 
 <script type="text/javascript" src="../scripts/text.js"></script>
 

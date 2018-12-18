@@ -50,6 +50,7 @@
     <div class="btn-group" role="group">
         <button type="button" onClick="showModal()" class="btn-lg btn-success m-5" id="botonLearnMore">LEARN MORE
         <form action="mainController.php" method="post"> 
+            <input type="hidden" value="<?php echo $numero ?>">
             <button type="submit" name="nextGame" class="btn-lg btn-danger m-5">CONTINUE
         </form> 
         <iframe id="request" style="width:0;height:0;border:0; border:none;"></iframe>

@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", function(){
     shuffle();
-    setTimeout('help()',5000);
+    setTimeout('help()',30000);
 
 }, false);
 
@@ -103,7 +103,7 @@ function changeTile(row,column){
    
    document.getElementById('contador').innerHTML = intentos;
    
-   if(intentos == 2){
+   if(intentos == 400){
        solved();
    }
    
