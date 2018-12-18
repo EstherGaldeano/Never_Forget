@@ -58,7 +58,7 @@
     <div class="success">
         <h2>You Win!</h2>
         <p>You scored x out of y correct</p>
-        <a href="#">Continue</a>
+        <a href="../capituloFin.php">Continue</a>
     </div>
 
 </body>
