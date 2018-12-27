@@ -18,8 +18,8 @@
   <script type="text/javascript" src="../../jquery/jquery.ui.touch-punch.min.js"></script>
     
 <!--GAME-->
-
-
+<!-- 
+<script type="text/javascript" src="../../scripts/games/game2/game2.js"></script> -->
 
 
 <!--BOOTSTRAP-->
@@ -152,4 +152,5 @@
 </body>
 
 <script type="text/javascript" src="../../scripts/games/game2/game2.js"></script>
+
 <?php endblock() ?>

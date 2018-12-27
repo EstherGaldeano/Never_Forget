@@ -1,7 +1,7 @@
 //FUNCION CON LAS VARIABLES
 function inicialize(){
 
-cards = document.querySelectorAll('.memory-card'); // Devuelvo el primer elemento que coincide con ".memory.card"
+cards = document.querySelectorAll('.memory-card'); // Recojo todos los elementos  con class ".memory.card" y los meto en un array cards.
 
 hasFlippedCard = false;
 lockBoard = false; // Evitar que se pueda clickar en una 3a carta antes que se den la vuelta las 2 primeras
@@ -37,6 +37,8 @@ function game(){
 function flipCard() {
   if (lockBoard) return;
   if (this === firstCard) return;// Controlar el doble click en una carta
+
+  // this--> hace referencia al elemento que provoca el evento
 
   this.classList.add('flip');
 
@@ -137,7 +139,7 @@ function countDown(){
     if(countCards==6){
       clearInterval(interval);
     }
-     document.getElementById("buttonStart").disabled=true;
+     document.getElementById("buttonStart").disabled=true;// Controlo que una vex clickado el botón de START, se desactiva y no puedo volver a clickar
 
   },1000);
 
