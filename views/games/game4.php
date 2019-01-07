@@ -18,6 +18,11 @@
                         <h1>Continue the adventure</h1>
                     </a>
                 </button>
+                <button id="continue" class="bttn"  type="button">
+                    <a class="text-white"  href="../capituloFin.php">
+                        <h1>Seguir intentandolo</h1>
+                    </a>
+                </button>
                 <div class="row">
                     <div id="cell11" class="cell1" onclick="changeTile(1,1)"></div>
                     <div id="cell12" class="cell2" onclick="changeTile(1,2)"></div>

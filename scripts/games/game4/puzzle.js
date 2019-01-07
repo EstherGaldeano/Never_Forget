@@ -25,7 +25,7 @@ function swap(tile1, tile2){
    if(checksolved()){
        acabado=true;
        if(intentos>1){
-           solved();
+           finish(solved);
        }
    }
    contador();
@@ -103,8 +103,10 @@ function changeTile(row,column){
    
    document.getElementById('contador').innerHTML = intentos;
    
-   if(intentos == 400){
-       solved();
+   //PONER OPCION A ACABAR O SEGUIR
+
+   if(intentos == 2){
+       finish(notSolved);
    }
    
    
@@ -155,26 +157,38 @@ function contador(){
 }
 
 //Puzzle resuelto.
-function solved() {
-   if(acabado==true){
-       document.getElementById("win").innerHTML="Well done!";
-   }else{
-       document.getElementById("win").innerHTML="Don't worry, <br> we finish it";
+function finish(isSolved) {
+//    if(acabado==true){
+//        document.getElementById("win").innerHTML="Well done!";
+//    }else{
+//        document.getElementById("win").innerHTML="Don't worry, <br> we finish it";
       
-   }
-   
+//    }
+   isSolved();
    document.getElementById("cell33").className= "Complete";
        clearInterval(tiempo); 
        
-       document.getElementById("puzzle").style.transition= ".5s ease-in-out";
-       for(var row=1; row<=3; row++){
-           for(var column=1; column<=3; column++){
-               document.getElementById("cell"+row+column).style.border= "none";
-               document.getElementById("cell"+row+column).style.filter= "blur(2px)";
-           }
-       }
-       document.getElementById("puzzle").style.transform= "scale(1.1)";
-       document.getElementById("win").style.display= "block";
-       document.getElementById("winContinue").style.display= "block";
+    document.getElementById("puzzle").style.transition= ".5s ease-in-out";
+    for(var row=1; row<=3; row++){
+        for(var column=1; column<=3; column++){
+            document.getElementById("cell"+row+column).style.border= "none";
+            document.getElementById("cell"+row+column).style.filter= "blur(2px)";
+        }
+    }
+    document.getElementById("puzzle").style.transform= "scale(1.1)";
+    document.getElementById("winContinue").style.display= "block";
+    document.getElementById("win").style.display= "block";
+    
+}
+
+//Fin del tiempo
+function notSolved(){
+    document.getElementById("win").innerHTML="Don't worry, <br> we finish it";
+    document.getElementById("continue").style.display= "block";
+}
+
+function solved(){
+    document.getElementById("win").innerHTML="Well done!";
+    
 }
 
