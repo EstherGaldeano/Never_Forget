@@ -1,91 +1,5 @@
-/* MOVIL */
-@media screen and (max-width: 812px) {
-    .cell1, .cell2, .cell3, .cell4, .cell5, .cell6, .cell7, .cell8, .cell9, .Complete, .cellhelp{
-        display: table-cell;
-        width: 100px; 
-        height: 66.66px;
-        /* min-height: 2em; */
-        border: 1px solid white; 
-        background: url(../../assets/img/REFUGI.jpg);
-        background-size: 300px 200px; 
-        cursor: pointer;
-    }
-    #puzzle{
-        z-index: -3;
-        position: absolute;
-        top: 30%;
-        left: 14%;
-    }
-    #win{
-        display: none;
-        position: absolute;
-        top: 25%;
-        left: 10%;
-        z-index: 1000;
-        font-family: 'Special Elite', cursive;
-    }
-    .info{
-        border-radius: 25px;
-        border-style: solid;
-        border-color: white;
-        width: 60%;
-        margin-top: 1%;
-        margin-left: 5%;
-        text-align: center;
-        font-weight: bold;
-    }
-    .bttn{
-        display: none;
-        position: absolute;
-        background-color: transparent;
-        border-radius: 25px;
-        border-style: solid;
-        border-color: white;
-        width: 50%;
-        top: 70%;
-        left: 20%;
-        z-index: 1000;
-        height: 33px;
-    }
-    #winContinue h1{
-        font-size: 13px;
-        font-family: 'Special Elite', cursive;
-    }
-   
-    .help{
-        margin-top: 3%;
-        display: none;
-        width: 30%;
-        height: 100px;
-        float: left;
-    }
-    .helps{
-        margin-top: 10%;
-        bottom:0px;
-       /* display: inline-flex; */
-        /* margin-top: 5%; */
-        width: 100%;
-        height: 40px;
-        margin-left: 8%;
-    }
-    .option{
-        width:20%;
-        margin-left: 5%;
-        margin-top: 7%;
-        float: left;
-        /* float: left; */
-    }
-    #abandonar{
-        margin-top: 90%;
-        margin-left: 26%;
-        float: left;
-        display: none;
-       
-    }
 
-}
-/* ORDENADOR */
-@media screen and (min-width: 813px) {
+
 
     .cell1, .cell2, .cell3, .cell4, .cell5, .cell6, .cell7, .cell8, .cell9, .Complete, .cellhelp{
         display: table-cell;
@@ -110,6 +24,8 @@
         left: 38%;
         z-index: 1000;
         font-family: 'Special Elite', cursive;
+        text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    
     }
     .info{
         border-radius: 25px;
@@ -131,9 +47,34 @@
         border-color: white;
         width: 40%;
         top: 70%;
-        left: 30%;
+        left: 52%;
         z-index: 1000;
         outline:none;
+        box-shadow:  1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+        text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    
+    }
+    #continue{
+        
+        background: transparent;
+        display: none;
+        position: absolute;
+        border-radius: 25px;
+        border-style: solid;
+        border-color: white;
+        width: 40%;
+        top: 70%;
+        padding-top: .7%;
+        padding-bottom: .7%;
+        left: 10%;
+        z-index: 1000;
+        outline:none;
+        box-shadow:  1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+        text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    
+    }
+    #continue h1{
+        font-family: 'Special Elite', cursive;
     }
     /* #winContinue:hover{
         cursor: pointer;
@@ -141,7 +82,7 @@
         text: white;
         border-color: transparent;
         */
-    }
+  
     a:link{
         text-decoration: none;
     }
@@ -178,7 +119,7 @@
         margin-left: 36%;
         display: none;
     }
-}
+
 
 .cell1 {background-position: left top;}
 .cell2 {background-position: center top;}
@@ -191,3 +132,99 @@
 .cell9 {background: white; cursor: default;} 
 .Complete {background-position: right bottom;}
 .cellhelp {background: red; cursor: default; float: left;}
+
+/* MOVIL */
+@media screen and (max-width: 812px) {
+    .cell1, .cell2, .cell3, .cell4, .cell5, .cell6, .cell7, .cell8, .cell9, .Complete, .cellhelp{
+        display: table-cell;
+        width: 100px; 
+        height: 66.66px;
+        /* min-height: 2em; */
+        border: 1px solid white; 
+        background: url(../../assets/img/REFUGI.jpg);
+        background-size: 300px 200px; 
+        cursor: pointer;
+    }
+    #puzzle{
+        z-index: -3;
+        position: absolute;
+        top: 30%;
+        left: 14%;
+    }
+    #win{
+        display: none;
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        z-index: 1000;
+        font-family: 'Special Elite', cursive;
+    }
+    .info{
+        border-radius: 25px;
+        border-style: solid;
+        border-color: white;
+        width: 60%;
+        margin-top: 1%;
+        margin-left: 5%;
+        text-align: center;
+        font-weight: bold;
+    }
+    #winContinue h1{
+        font-size: 13px;
+        font-family: 'Special Elite', cursive;
+    }
+    #continue{
+        display: none;
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        z-index: 1000;
+    }
+    #continue h1{
+        font-size: 13px;
+        font-family: 'Special Elite', cursive;
+    }
+   
+    .help{
+        margin-top: 3%;
+        display: none;
+        width: 30%;
+        height: 100px;
+        float: left;
+    }
+    .helps{
+        margin-top: 10%;
+        bottom:0px;
+       /* display: inline-flex; */
+        /* margin-top: 5%; */
+        width: 100%;
+        height: 40px;
+        margin-left: 8%;
+    }
+    .option{
+        width:20%;
+        margin-left: 5%;
+        margin-top: 7%;
+        float: left;
+        /* float: left; */
+    }
+    #abandonar{
+        margin-top: 90%;
+        margin-left: 26%;
+        float: left;
+        display: none;
+       
+    }
+    .cell1 {background-position: left top;}
+    .cell2 {background-position: center top;}
+    .cell3 {background-position: right top;}
+    .cell4 {background-position: left center;}
+    .cell5 {background-position: center center;}
+    .cell6 {background-position: right center;}
+    .cell7 {background-position: left bottom;}
+    .cell8 {background-position: center bottom;}
+    .cell9 {background: white; cursor: default;} 
+    .Complete {background-position: right bottom;}
+    .cellhelp {background: red; cursor: default; float: left;}
+
+}

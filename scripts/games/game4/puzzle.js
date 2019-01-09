@@ -105,7 +105,7 @@ function changeTile(row,column){
    
    //PONER OPCION A ACABAR O SEGUIR
 
-   if(intentos == 2){
+   if(intentos == 400){
        finish(notSolved);
    }
    
@@ -186,7 +186,22 @@ function notSolved(){
     document.getElementById("win").innerHTML="Don't worry, <br> we finish it";
     document.getElementById("continue").style.display= "block";
 }
-
+function volver(){
+    var tiempo = window.setInterval(function(){
+        document.getElementById('tiempo').innerHTML = segundos+' s';
+        segundos++;
+     },1000);
+     for(var row=1; row<=3; row++){
+        for(var column=1; column<=3; column++){
+            document.getElementById("cell"+row+column).style.border= "1px solid white";
+            document.getElementById("cell"+row+column).style.filter= "none";
+        }
+    }
+    document.getElementById("puzzle").style.transform= "none";
+    document.getElementById("winContinue").style.display= "none";
+    document.getElementById("win").style.display= "none";
+    document.getElementById("continue").style.display= "none";
+}
 function solved(){
     document.getElementById("win").innerHTML="Well done!";
     
