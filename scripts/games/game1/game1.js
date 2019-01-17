@@ -22,7 +22,7 @@ let questions =[
         correct: 0
     },
     {
-        title: "Where the last big battle of the Civil War took place?",
+        title: "Where did the last big battle of the Civil War took place?",
         answers: ["La Batalla de Guadarrama", "La Batalla de Madrid", "Batalla de Teruel", "La Batalla del Ebro"],
         correct: 3
     },
@@ -30,7 +30,7 @@ let questions =[
 
 
 $(document).ready(function(){
-
+    //get ready to start the firt time the quiz
     $('.start a').click(function(e){
         e.preventDefault();
         shuffle(questions);
@@ -43,6 +43,7 @@ $(document).ready(function(){
         recortes = 0;
         segundos=1;
         summaryShow = false;
+        //use a funtion for count the time
         window.setInterval(function(){
             document.getElementById('tiempo').innerHTML = segundos+' s';
             checkTime(segundos);
@@ -62,27 +63,22 @@ $(document).ready(function(){
             //get the id of the selected option
             let guess = parseInt($('li.selected').attr('id'));
             console.log("This is the id the user has choosen: " + guess);
-            checkAnswer(guess);
+            //use callbacks for checking when finish the user to answer if he can continue or if not
+            checkAnswer(guess,function(){    
+                $('.quiz').hide();
+                $('.success').show();
+                $('.time').hide();
+                $('.success p').text("Congrats you scored " + score + " out of " + questions.length + " correct!");
+            }, function(){
+                $('.quiz').hide();
+                $('.summary').show();
+                $('#looser').text("You scored " + score + " out of " + questions.length);
+            });
         }
         else{
             alert('Please select an answer');
         }
     });
-
-    // $('#previous').click(function(e){
-    //     e.preventDefault();
-    //     if($('li.selected').length){
-    //         //get the id of the selected option
-    //         let guess = parseInt($('li.selected').attr('id'));
-    //         console.log("This is the id the user has choosen: " + guess);
-    //         let answerguess = [];
-    //         answerguess.push(guess);
-    //         currentQuestion--;
-    //     }
-    //     else{
-    //         alert('Please select an answer');
-    //     }
-    // });
 
     $('.summary a').click(function (e) {
         e.preventDefault();
@@ -91,12 +87,8 @@ $(document).ready(function(){
 });
 
 function showQuestion(){
-    // if(recortes > 0){
-    //     for(var i=0; i<recortes; i++){
-    //         questions.pop();
-    //     }
-    // }
     let question = questions[currentQuestion];
+    //put the text in the correct place and pass to the next question
     $('.quiz h2').text(question.title);
     $('.quiz ul').html('');
     for(var i=0; i<question.answers.length; i++){
@@ -109,23 +101,30 @@ function showQuestion(){
     }
     $('.sumbit-answer').hide();
 }
-
-function checkAnswer(guess){
+//function with callbacks
+function checkAnswer(guess, showSuccesCallBack, showSummaryCallback){
     let question = questions[currentQuestion]
+    //add une point if the user answer correctly
     if(question.correct === guess){
         score++
     }
     currentQuestion++;
     if(currentQuestion >= questions.length){
+        //check if the user answered well all the questions
         if(score === questions.length){
-            showSuccess();
-            summaryShow = false;
+            if (showSuccesCallBack && typeof(showSuccesCallBack) === "function") {
+                showSuccesCallBack();
+                summaryShow = false;
+            }
+            //showSuccess();
         }
         else{
-            showSummary();
-            summaryShow = true;
+            if (showSummaryCallback && typeof(showSummaryCallback) === "function") {
+                showSummaryCallback();
+                summaryShow = true;
+            }
+            //showSummary();   
         }
-        
     }
     else{
         showQuestion();
@@ -133,31 +132,28 @@ function checkAnswer(guess){
     }
 }
 
-// function goBack(questionNumber){
-//     let selected = index.map(answerguess[questionNumber]);
-//     console.log(selected);
+// function showSummary(){
+//     $('.quiz').hide();
+//     $('.summary').show();
+//     $('#looser').text("You scored " + score + " out of " + questions.length);
 // }
 
-function showSummary(){
-    $('.quiz').hide();
-    $('.summary').show();
-    $('#looser').text("You scored " + score + " out of " + questions.length);
-}
-
-function showSuccess(){
-    $('.quiz').hide();
-    $('.success').show();
-    $('.time').hide();
-    $('.success p').text("Congrats you scored " + score + " out of " + questions.length + " correct!");
-}
+// function showSuccess(){
+//     $('.quiz').hide();
+//     $('.success').show();
+//     $('.time').hide();
+//     $('.success p').text("Congrats you scored " + score + " out of " + questions.length + " correct!");
+// }
 
 function restartQuiz(){
     $('.summary').hide();
     $('.quiz').show();
     shuffle(questions);
+    //restart all variables to restart the quiz
     score = 0;
     currentQuestion = 0;
     summaryShow = false;
+    //check the state of the help option whn restart the quiz
     if(recortes != 2){
         if(fase1 == true){
             recortes = 1;
@@ -170,7 +166,7 @@ function restartQuiz(){
 }
 
 function checkTime(tiempo){
-    //console.log(tiempo);
+    //check the time in order to show or not the help option
     if(tiempo >= 60 && summaryShow === false && recortes === 0){
         $('.delete').show();
         $('#btnDelete').on('click', function() {
@@ -180,6 +176,7 @@ function checkTime(tiempo){
            $('.delete').hide();
         }); 
     }
+     //check the time and if the first option help is checked in order to show or not the second help option
     else if(tiempo >= 120 && summaryShow === false && recortes === 1){
         $('.delete').show();
         $('#btnDelete').on('click', function() {

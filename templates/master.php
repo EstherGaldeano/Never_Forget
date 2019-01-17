@@ -34,45 +34,44 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/Never_Forget/librerias/ti.php";
 
 </head>
 <body>
-        
-        <nav class="navSize navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.php">NEVER FORGET</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav col-11">
-                    <a class="nav-item nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="contextoHistorico.php">Historic Context <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="../views/about_us.php">About us <span class="sr-only">(current)</span></a>
-                    
-                </div>
-                <div class="dropdown col-1 float-right">
-                    
-                    <a class="navbar-brand float-right"role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
-                        <!--<img src="../assets/img/usuario.png" width="30" height="30" alt="">-->
-                        <i class="far fa-user" style='font-size:16px;color:white'></i>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <?php if(isset($_SESSION['userLoged'])){ ?>
-                            <form action="../views/mainController.php" method="post">
-                                <?php if($_SESSION['userLoged']['role'] == 0){ ?>
-                                    <a class="dropdown-item" href="#"><?php echo $_SESSION['userLoged']['name']; ?></a>
-                                <?php }else{ ?>
-                                    <a class="dropdown-item" href="admin.php"><?php echo $_SESSION['userLoged']['name']; ?> (Admin)</a>
-                                <?php } ?>
-                                <a><button class="dropdown-item" type="submit" name="logout">Logout</button></a>
-                                <a class="dropdown-item" href="userProgress.php">My progress</a>
-                            </form>
-                            
-                        <?php }else{ ?>
-                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#LoginModal">Log in</a>
-                        <?php } ?>
+    <nav class="navSize navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" id="title" href="index.php"  style='font-family:Special Elite, cursive'>NEVER FORGET</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav col-11">
+                <a class="nav-item nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="contextoHistorico.php">Historic Context <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="../views/about_us.php">About us <span class="sr-only">(current)</span></a>
+                
+            </div>
+            <div class="dropdown col-1 float-right">
+                
+                <a class="navbar-brand float-right"role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                    <!--<img src="../assets/img/usuario.png" width="30" height="30" alt="">-->
+                    <i class="far fa-user" style='font-size:16px;color:white'></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <?php if(isset($_SESSION['userLoged'])){ ?>
+                        <form action="../views/mainController.php" method="post">
+                            <?php if($_SESSION['userLoged']['role'] == 0){ ?>
+                                <a class="dropdown-item" href="#"><?php echo $_SESSION['userLoged']['name']; ?></a>
+                            <?php }else{ ?>
+                                <a class="dropdown-item" href="admin.php"><?php echo $_SESSION['userLoged']['name']; ?> (Admin)</a>
+                            <?php } ?>
+                            <a><button class="dropdown-item" type="submit" name="logout">Logout</button></a>
+                            <a class="dropdown-item" href="userProgress.php">My progress</a>
+                        </form>
                         
-                    </div>
+                    <?php }else{ ?>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#LoginModal">Log in</a>
+                    <?php } ?>
+                    
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
 
     <?php startblock('principal') ?>
     <?php endblock() ?>

@@ -52,7 +52,6 @@ function changeTile(row,column){
    var tile= document.getElementById("cell"+row+column);
    
    if (tile.className != "cell9"){
-   //   if(coprobarDosBlancos()){
        
        if(column<3 && row<3){
            if(document.getElementById("cell"+row+(column+1)).className=="cell9" && document.getElementById("cell"+(row+1)+column).className=="cell9" ){
@@ -74,8 +73,6 @@ function changeTile(row,column){
                } 
            }
        }
-   //   }
-   //   else{
        if(column<3){
            
            if(document.getElementById("cell"+row+(column+1)).className=="cell9"){
@@ -112,22 +109,7 @@ function changeTile(row,column){
    
 }
 
-// function coprobarDosBlancos(){
-//     (document.getElementById("cell"+(row+1)+column).className==cell9 && document.getElementById("cell"+row+(column+1).className==cell9) 
-//     || (document.getElementById("cell"+(row-1)+column).className==cell9 && document.getElementById("cell"+row+(column-1)).className==cell9)
-//     || (document.getElementById("cell"+row+(column-1)).className==cell9 && document.getElementById("cell"+row+(column+1)).className==cell9)
-//     || (document.getElementById("cell"+(row+1)+column).className==cell9 && document.getElementById("cell"+(row-1)+column).className==cell9))
-   
-// }
-
-// function help(){
-//     aux=document.getElementById("cell11").className;
-//     document.getElementById("cell11").className="cell9";
-//     document.getElementById("cellhelp").className=aux;
-
-// }
-
-
+//Enseña la ayuda, boton para abandonar y puzzle completado en el lateral.
 function help(){
    document.getElementById("help").style.display= "block";
    document.getElementById("abandonar").style.display= "block";
@@ -156,14 +138,8 @@ function contador(){
 
 }
 
-//Puzzle resuelto.
+//Funcion para llamar cuando acaba el puzzle.
 function finish(isSolved) {
-//    if(acabado==true){
-//        document.getElementById("win").innerHTML="Well done!";
-//    }else{
-//        document.getElementById("win").innerHTML="Don't worry, <br> we finish it";
-      
-//    }
    isSolved();
    document.getElementById("cell33").className= "Complete";
        clearInterval(tiempo); 
@@ -181,11 +157,13 @@ function finish(isSolved) {
     
 }
 
-//Fin del tiempo
+//Enviar notSolved si no ha acabado el puzzle y se ha rendido  o se le han acabado las oportunidades
 function notSolved(){
     document.getElementById("win").innerHTML="Don't worry, <br> we finish it";
     document.getElementById("continue").style.display= "block";
 }
+
+//Funcion para seguir jugando.
 function volver(){
     var tiempo = window.setInterval(function(){
         document.getElementById('tiempo').innerHTML = segundos+' s';
@@ -202,6 +180,8 @@ function volver(){
     document.getElementById("win").style.display= "none";
     document.getElementById("continue").style.display= "none";
 }
+
+//Enviar funcion si lo ha acabado con exito.
 function solved(){
     document.getElementById("win").innerHTML="Well done!";
     

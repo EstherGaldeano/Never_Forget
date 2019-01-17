@@ -78,9 +78,10 @@ h2{
     margin-top: -5%;
 }
 .selected{
-   /* background-color: #ee2b47;  
-   border: 1px solid #ee2b47;*/ 
-   color: #ee2b47;
+   background-color: white;  
+   border: 1px solid black;
+   color: black;
+   /* color: #ee2b47; */
 }
 p{
     margin-bottom: 5%;

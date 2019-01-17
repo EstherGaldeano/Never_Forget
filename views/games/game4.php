@@ -20,7 +20,7 @@
                 </button>
                 <button id="continue" class="bttn" style="cursor: pointer;"  type="button" onclick="volver()">
                     
-                    <h1 class="text-white">Seguir intentandolo</h1>
+                    <h1 class="text-white">Keep trying</h1>
                     
                 </button>
                 <div class="row">

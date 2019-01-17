@@ -42,7 +42,7 @@
                                 <ul>
                                     <li><a href="https://twitter.com/JordiPare26" target="_blank"><i class="fa fa-twitter iconAbout"></i></a></li>
                                     <li><a href="" target="_blank"><i class="fa fa-linkedin iconAbout"></i></a></li>
-                                    <li><a href="" target="_blank"><i class="fa fa-instagram iconAbout"></i></a></li>    
+                                    <li><a href="https://www.instagram.com/jordi.pare96/" target="_blank"><i class="fa fa-instagram iconAbout"></i></a></li>    
                                 </ul> 
                             </div>                    
                         </div>
@@ -112,7 +112,7 @@
                                 <ul>
                                     <li><a href="https://twitter.com/Fran97Chuk?lang=es" target="_blank"><i class="fa fa-twitter iconAbout"></i></a></li>
                                     <li><a href="https://www.linkedin.com/in/francesc-retamal-requena/" target="_blank"><i class="fa fa-linkedin iconAbout"></i></a></li>
-                                    <li><a href="https://twitter.com/Fran97Chuk?lang=es" target="_blank"><i class="fa fa-instagram iconAbout"></i></a></li>    
+                                    <li><a href="https://www.instagram.com/franrere_/" target="_blank"><i class="fa fa-instagram iconAbout"></i></a></li>    
                                 </ul>   
                                 
                             </div>
