@@ -18,11 +18,6 @@
                         <h1>Continue the adventure</h1>
                     </a>
                 </button>
-                <button id="continue" class="bttn" style="cursor: pointer;"  type="button" onclick="volver()">
-                    
-                    <h1 class="text-white">Seguir intentandolo</h1>
-                    
-                </button>
                 <div class="row">
                     <div id="cell11" class="cell1" onclick="changeTile(1,1)"></div>
                     <div id="cell12" class="cell2" onclick="changeTile(1,2)"></div>
@@ -51,7 +46,7 @@
                     <p class="text-white ml-1">TIME</p>
                     <div id="tiempo" class="float-left text-white  mt-1 info"></div>
                 </div>
-                <button class="btn btn-danger" id="abandonar" type="button" onClick="finish(notSolved)">Give up</button>
+                <button class="btn btn-danger" id="abandonar" type="button" onClick="solved()">Give up</button>
             </div>
      
             
