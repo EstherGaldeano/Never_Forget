@@ -37,7 +37,8 @@ include "../templates/master.php" ?>
         });
     </script>
             <?php } ?>
-
+        
+       
         <div class="container-fluid h-100 prueba"> 
     		<div class="row w-100 align-items-center justify-content-center">
     			<div class="col text-center">
@@ -82,12 +83,6 @@ include "../templates/master.php" ?>
                                 <?php require_once "./partials/mensajes.php"; ?>
                                 </div>
                                 <?php } ?> 
-                            </div>
-                            <div class="row">
-                                <div class="col-50">
-                                    <p>Don't have an account? <a data-toggle="modal" data-target="#RegistreModal" data-dismiss="modal" color="#007bff" style="font-weight: bold;">Sign Up</a></p>
-                                   
-                                </div>
                             </div>
                     </div>
                 <div class="modal-footer">
